@@ -1,0 +1,104 @@
+.header-main__top {
+    padding: 16px 0;
+    background-color: var(--color-light-gray);
+}
+
+.header-main__top .header-main__content p{
+    text-transform: uppercase;
+}
+
+.header-main__versions-search {
+    background-color: var(--color-gray);
+}
+
+.header-main__versions-search .header-main__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.header-main__versions-search__search {
+    margin-right: 25px;
+}
+
+.header-main__versions-search__search input{
+    background-color: var(--color-light-gray);
+    border-radius: 11px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    padding: 4px 25px;
+}
+
+.header-main__versions-search__versions button {
+    padding: 14px 50px;
+    background-color: var(--color-dark-gray);
+    margin-right: 25px;
+    border:none;
+    cursor: pointer;
+    transition: opacity .3s ease;
+}
+
+.header-main__versions-search__versions button:hover{
+    opacity: .8;
+}
+
+.header-main__versions-search__versions button:last-child {
+    margin-right: 0;
+}
+
+.header-main__nav-pages{
+    padding: 23px 0;
+}
+
+.header-main__nav-pages .header-main__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main__nav-pages__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-main__nav-pages__nav-item {
+    margin-right: 27px;
+}
+
+.header-main__nav-pages__nav-item:last-child{
+    margin-right: 0;
+}
+
+.header-main__nav-pages__nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.header-main__nav-pages__nav-link span {
+    margin-right: 8px;
+}
+
+.header-main__nav-pages__nav-link img {
+    margin-top: 3px;
+}
+
+.header-main__nav-fast {
+    padding: 24px 0;
+    background-color: var(--color-light-gray);
+}
+
+.header-main__nav-fast__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main__nav-fast__nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.header-main__nav-fast__nav-item span {
+    margin-left: 20px;
+}
