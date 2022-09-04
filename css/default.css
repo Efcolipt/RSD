@@ -1,11 +1,12 @@
-::root {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap');
+:root {
     --fz-size: 1;
-    --default-fz: 16px;
+    --default-fz: calc(16px * var(--fz-size));
     --font-letter-spacing: 0px;
     --font-line-height: 1;
 
     --font-OpenSans: 'Open Sans';
-    --font-RobotoCondensed: 'Roboto Condenced';
+    --font-RobotoCondensed: 'Roboto Condensed';
     --font-serif: sans-serif;
 
     --headline-font: var(--font-OpenSans);
@@ -34,11 +35,16 @@
 
 a {
     text-decoration: none;
+    color: var(--color-default)
 }
 
 ul, ol {
     list-style: none;
 } 
+
+em{
+    font-weight: var(--text-bold);
+}
 
 html {
     font-size: var(--default-fz);
@@ -51,7 +57,7 @@ html {
     margin: 0 auto;
 }
 
-p, a, span, li, small, strong {
+p, a, span, li, small, strong, button, input {
     font-family: var(--font-OpenSans);
 }
 
