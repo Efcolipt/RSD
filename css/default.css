@@ -1,8 +1,12 @@
 ::root {
     --fz-size: 1;
-    --default-fz: 16px
+    --default-fz: 16px;
+    --font-letter-spacing: 0px;
+    --font-line-height: 1;
+
     --font-OpenSans: 'Open Sans';
     --font-RobotoCondensed: 'Roboto Condenced';
+    --font-serif: sans-serif;
 
     --headline-font: var(--font-OpenSans);
     --text-font: var(--font-OpenSans);
@@ -36,10 +40,8 @@ ul, ol {
     list-style: none;
 } 
 
-body {
+html {
     font-size: var(--default-fz);
-    line-height: 1;
-    font-family: 'Roboto Condensed', 'Open-Sans', sans-serif;
 }
 
 .container {
