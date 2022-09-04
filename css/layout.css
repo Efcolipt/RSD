@@ -51,16 +51,6 @@
     padding: 23px 0;
 }
 
-.header-main__nav-pages__brand-link {
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-}
-
-.header-main__nav-pages__brand-link h2 {
-    margin-left: 20px;
-}
-
 .header-main__nav-pages .header-main__content {
     display: flex;
     justify-content: space-between;
