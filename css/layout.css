@@ -102,3 +102,77 @@
 .header-main__nav-fast__nav-item span {
     margin-left: 20px;
 }
+
+
+
+
+
+.footer {
+    border-top: 1px solid var(--color-gray);
+    padding: 56px 0;
+}
+
+.footer-brand {
+    margin-bottom: 35px;
+}
+
+.footer-info-list{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info-list div {
+    margin-bottom: 35px;
+}
+
+.footer-info-list div:last-child {
+    margin-bottom: 0;
+}
+
+.footer-info-list div p {
+    margin-bottom: 12px;
+}
+
+.footer-info-list__actions p{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.footer-info-list__actions p span {
+    margin-left: 20px;
+}
+
+.footer-info-list__nav{
+    display: flex;
+}
+
+.footer-info-list__nav__fast-nav__headline {
+    margin-bottom: 25px;
+}
+
+.footer-info-list__nav__fast-nav{
+    margin-right: 126px;
+}
+
+.footer-info-list__nav__fast-nav__list-item{
+    margin-bottom: 20px;
+}
+
+
+.footer-found-error{
+    margin-right: 126px;
+    margin-top: 60px;
+    text-align: right;
+    color: var(--color-dark-gray)
+}
+
+.footer-found-error em {
+    color: var(--color-default);
+}
+
+.footer-policy {
+    padding: 10px 0;
+    background-color: var(--color-gray);
+    text-align: right;
+}
