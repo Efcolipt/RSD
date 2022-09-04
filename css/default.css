@@ -1,3 +1,28 @@
+::root {
+    --fz-size: 1;
+    --default-fz: 16px;
+    --font-letter-spacing: 0px;
+    --font-line-height: 1;
+
+    --font-OpenSans: 'Open Sans';
+    --font-RobotoCondensed: 'Roboto Condenced';
+    --font-serif: sans-serif;
+
+    --headline-font: var(--font-OpenSans);
+    --text-font: var(--font-OpenSans);
+
+    --text-bold: 600;
+    --text-normal: 400;
+    
+
+    --color-default: #000;
+    --color-accent: #E11B50;
+    --color-light-gray: #F1F1F1;
+    --color-gray: #E1E1E1;
+    --color-dark-gray: #C0C0C0;
+    --color-dark-black: #505050;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,10 +40,8 @@ ul, ol {
     list-style: none;
 } 
 
-body {
-    font-size: 16px;
-    line-height: 1;
-    font-family: 'Roboto Condensed', 'Open-Sans', sans-serif;
+html {
+    font-size: var(--default-fz);
 }
 
 .container {
@@ -26,4 +49,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+}
+
+p, a, span, li, small, strong {
+    font-family: var(--font-OpenSans);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-RobotoCondensed);
 }
