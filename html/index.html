@@ -146,34 +146,327 @@
 
 
         <main>
-            <div class="main-slider-index-page">
+            <section class="main-slider-index-page">
                 <div class="container">
-                    <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+                    <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true"
+                        data-interval="7000">
                         <div class="slider__wrapper">
                             <div class="slider__items">
-                              <div class="slider__item">
-                               <img src="../img/bg.png" alt="">
-                              </div>
-                              <div class="slider__item">
-                                <img src="../img/bg.png" alt="">
+                                <div class="slider__item">
+                                    <img class="image" src="../img/bg.png" alt="">
+                                </div>
+                                <div class="slider__item">
+                                    <img class="image" src="../img/bg.png" alt="">
 
-                              </div>
-                              <div class="slider__item">
-                                <img src="../img/bg.png" alt="">
-                              </div>
+                                </div>
+                                <div class="slider__item">
+                                    <img class="image" src="../img/bg.png" alt="">
+                                </div>
                             </div>
-                          </div>
-                          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
-                          <button class="slider__control" data-slide="prev"></button>
-                          <button class="slider__control" data-slide="next"></button>
-                          <ol class="slider__indicators">
+                        </div>
+                        <button class="slider__control btn-default" data-slide="prev">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.939339 10.9393C0.353552 11.5251 0.353552 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97918 12.6066 1.3934C12.0208 0.80761 11.0711 0.80761 10.4853 1.3934L0.939339 10.9393ZM32 10.5L2 10.5L2 13.5L32 13.5L32 10.5Z"
+                                    fill="#FAFAFA" />
+                            </svg>
+
+                        </button>
+                        <button class="slider__control btn-default" data-slide="next">
+                            <svg width="32" height="24" viewBox="0 0 32 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M31.0607 13.0607C31.6464 12.4749 31.6464 11.5251 31.0607 10.9393L21.5147 1.3934C20.9289 0.807611 19.9792 0.807611 19.3934 1.3934C18.8076 1.97919 18.8076 2.92893 19.3934 3.51472L27.8787 12L19.3934 20.4853C18.8076 21.0711 18.8076 22.0208 19.3934 22.6066C19.9792 23.1924 20.9289 23.1924 21.5147 22.6066L31.0607 13.0607ZM0 13.5H30V10.5H0V13.5Z"
+                                    fill="#FAFAFA" />
+                            </svg>
+
+                        </button>
+                        <ol class="slider__indicators">
                             <li data-slide-to="0"></li>
                             <li data-slide-to="1"></li>
                             <li data-slide-to="2"></li>
-                          </ol>
+                        </ol>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <section class="all-news-sliders">
+                <div class="container">
+                    <div class="all-news-sliders__content">
+                        <div>
+                            <h2>
+                                <a href="javascript: void(0)">
+                                    <svg width="28" height="28" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_68_1272)">
+                                            <path
+                                                d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                                                fill="url(#paint0_linear_68_1272)" />
+                                            <path
+                                                d="M7.44848 20.9784C9.78648 19.6906 12.3963 18.6158 14.8348 17.5354C19.03 15.7659 23.2418 14.0271 27.4961 12.4083C28.3238 12.1324 29.8111 11.8628 29.957 13.0894C29.877 14.8258 29.5486 16.5519 29.3233 18.2781C28.7515 22.0741 28.0903 25.8571 27.4458 29.6406C27.2236 30.9008 25.645 31.5533 24.6348 30.7468C22.2071 29.1068 19.7608 27.4831 17.3641 25.8051C16.5791 25.0074 17.3071 23.8618 18.0081 23.2921C20.0076 21.3216 22.1281 19.6474 24.0231 17.5751C24.5343 16.3408 23.024 17.3811 22.5258 17.6999C19.7885 19.5863 17.1181 21.5878 14.2321 23.2456C12.758 24.0571 11.0398 23.3636 9.56631 22.9106C8.24514 22.3638 6.30914 21.8126 7.44831 20.9786L7.44848 20.9784Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_68_1272" x1="26.6683" y1="6.668"
+                                                x2="16.6683" y2="30" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#37AEE2" />
+                                                <stop offset="1" stop-color="#1E96C8" />
+                                            </linearGradient>
+                                            <clipPath id="clip0_68_1272">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                                <span>
+                                    Главные новости
+                                </span>
+                                <a href="javascript:void(0)">
+                                    <svg width="12" height="12" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.93934 15.0104C0.353553 15.5962 0.353553 16.5459 0.93934 17.1317C1.52513 17.7175 2.47487 17.7175 3.06066 17.1317L0.93934 15.0104ZM17.6421 1.92891C17.6421 1.10048 16.9706 0.42891 16.1421 0.42891L2.64214 0.428909C1.81371 0.428909 1.14214 1.10048 1.14214 1.92891C1.14214 2.75734 1.81371 3.42891 2.64214 3.42891H14.6421V15.4289C14.6421 16.2573 15.3137 16.9289 16.1421 16.9289C16.9706 16.9289 17.6421 16.2573 17.6421 15.4289L17.6421 1.92891ZM3.06066 17.1317L17.2028 2.98957L15.0815 0.868249L0.93934 15.0104L3.06066 17.1317Z"
+                                            fill="#E11B50" />
+                                    </svg>
+
+
+                                </a>
+                            </h2>
+                            <div class="all-news-sliders__article-content">
+                                <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true"
+                                    data-interval="7000">
+                                    <div class="slider__wrapper">
+                                        <div class="slider__items">
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>В МО МГО ВОГ «Лианозово» 17 мая Мария Евсеева провела лекцию
+                                                        о Международном дне Семьи</h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>В МО МГО ВОГ «Лианозово» 17 мая Мария Евсеева провела лекцию
+                                                        о Международном дне Семьи</h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>В МО МГО ВОГ «Лианозово» 17 мая Мария Евсеева провела лекцию
+                                                        о Международном дне Семьи</h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="slider__indicators">
+                                        <li data-slide-to="0"></li>
+                                        <li data-slide-to="1"></li>
+                                        <li data-slide-to="2"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>
+                                <a href="javascript: void(0)">
+                                    <svg width="28" height="28" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_68_1272)">
+                                            <path
+                                                d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                                                fill="url(#paint0_linear_68_1272)" />
+                                            <path
+                                                d="M7.44848 20.9784C9.78648 19.6906 12.3963 18.6158 14.8348 17.5354C19.03 15.7659 23.2418 14.0271 27.4961 12.4083C28.3238 12.1324 29.8111 11.8628 29.957 13.0894C29.877 14.8258 29.5486 16.5519 29.3233 18.2781C28.7515 22.0741 28.0903 25.8571 27.4458 29.6406C27.2236 30.9008 25.645 31.5533 24.6348 30.7468C22.2071 29.1068 19.7608 27.4831 17.3641 25.8051C16.5791 25.0074 17.3071 23.8618 18.0081 23.2921C20.0076 21.3216 22.1281 19.6474 24.0231 17.5751C24.5343 16.3408 23.024 17.3811 22.5258 17.6999C19.7885 19.5863 17.1181 21.5878 14.2321 23.2456C12.758 24.0571 11.0398 23.3636 9.56631 22.9106C8.24514 22.3638 6.30914 21.8126 7.44831 20.9786L7.44848 20.9784Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_68_1272" x1="26.6683" y1="6.668"
+                                                x2="16.6683" y2="30" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#37AEE2" />
+                                                <stop offset="1" stop-color="#1E96C8" />
+                                            </linearGradient>
+                                            <clipPath id="clip0_68_1272">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                                <span>
+                                    Экстренные новости
+                                </span>
+                                <a href="javascript:void(0)">
+                                    <svg width="12" height="12" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.93934 15.0104C0.353553 15.5962 0.353553 16.5459 0.93934 17.1317C1.52513 17.7175 2.47487 17.7175 3.06066 17.1317L0.93934 15.0104ZM17.6421 1.92891C17.6421 1.10048 16.9706 0.42891 16.1421 0.42891L2.64214 0.428909C1.81371 0.428909 1.14214 1.10048 1.14214 1.92891C1.14214 2.75734 1.81371 3.42891 2.64214 3.42891H14.6421V15.4289C14.6421 16.2573 15.3137 16.9289 16.1421 16.9289C16.9706 16.9289 17.6421 16.2573 17.6421 15.4289L17.6421 1.92891ZM3.06066 17.1317L17.2028 2.98957L15.0815 0.868249L0.93934 15.0104L3.06066 17.1317Z"
+                                            fill="#E11B50" />
+                                    </svg>
+
+                                </a>
+                            </h2>
+                            <div class="all-news-sliders__article-content">
+                                <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true"
+                                    data-interval="7000">
+                                    <div class="slider__wrapper">
+                                        <div class="slider__items">
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>Дети с 14 лет смогут самостоятельно регистрироваться на портале
+                                                        госуслуг</h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>Дети с 14 лет смогут самостоятельно регистрироваться на портале
+                                                        госуслуг</h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>Дети с 14 лет смогут самостоятельно регистрироваться на портале
+                                                        госуслуг</h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="slider__indicators">
+                                        <li data-slide-to="0"></li>
+                                        <li data-slide-to="1"></li>
+                                        <li data-slide-to="2"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                            <h2>
+                                <a href="javascript: void(0)">
+                                    <svg width="28" height="28" viewBox="0 0 40 40" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_68_1272)">
+                                            <path
+                                                d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
+                                                fill="url(#paint0_linear_68_1272)" />
+                                            <path
+                                                d="M7.44848 20.9784C9.78648 19.6906 12.3963 18.6158 14.8348 17.5354C19.03 15.7659 23.2418 14.0271 27.4961 12.4083C28.3238 12.1324 29.8111 11.8628 29.957 13.0894C29.877 14.8258 29.5486 16.5519 29.3233 18.2781C28.7515 22.0741 28.0903 25.8571 27.4458 29.6406C27.2236 30.9008 25.645 31.5533 24.6348 30.7468C22.2071 29.1068 19.7608 27.4831 17.3641 25.8051C16.5791 25.0074 17.3071 23.8618 18.0081 23.2921C20.0076 21.3216 22.1281 19.6474 24.0231 17.5751C24.5343 16.3408 23.024 17.3811 22.5258 17.6999C19.7885 19.5863 17.1181 21.5878 14.2321 23.2456C12.758 24.0571 11.0398 23.3636 9.56631 22.9106C8.24514 22.3638 6.30914 21.8126 7.44831 20.9786L7.44848 20.9784Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <linearGradient id="paint0_linear_68_1272" x1="26.6683" y1="6.668"
+                                                x2="16.6683" y2="30" gradientUnits="userSpaceOnUse">
+                                                <stop stop-color="#37AEE2" />
+                                                <stop offset="1" stop-color="#1E96C8" />
+                                            </linearGradient>
+                                            <clipPath id="clip0_68_1272">
+                                                <rect width="40" height="40" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </a>
+                                <span>
+                                    Первые лица
+                                </span>
+                                <a href="javascript:void(0)">
+                                    <svg width="12" height="12" viewBox="0 0 18 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.93934 15.0104C0.353553 15.5962 0.353553 16.5459 0.93934 17.1317C1.52513 17.7175 2.47487 17.7175 3.06066 17.1317L0.93934 15.0104ZM17.6421 1.92891C17.6421 1.10048 16.9706 0.42891 16.1421 0.42891L2.64214 0.428909C1.81371 0.428909 1.14214 1.10048 1.14214 1.92891C1.14214 2.75734 1.81371 3.42891 2.64214 3.42891H14.6421V15.4289C14.6421 16.2573 15.3137 16.9289 16.1421 16.9289C16.9706 16.9289 17.6421 16.2573 17.6421 15.4289L17.6421 1.92891ZM3.06066 17.1317L17.2028 2.98957L15.0815 0.868249L0.93934 15.0104L3.06066 17.1317Z"
+                                            fill="#E11B50" />
+                                    </svg>
+
+                                </a>
+                            </h2>
+                            <div class="all-news-sliders__article-content">
+                                <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true"
+                                    data-interval="7000">
+                                    <div class="slider__wrapper">
+                                        <div class="slider__items">
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>Собянин сообщил список отмененных COVID ограничений в Москве
+                                                    </h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>Собянин сообщил список отмененных COVID ограничений в Москве
+                                                    </h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                            <div class="slider__item">
+                                                <article class="all-news-sliders__article">
+                                                    <img class="image" src="../img/bg-smal.png" alt="">
+                                                    <h3>Собянин сообщил список отмененных COVID ограничений в Москве
+                                                    </h3>
+                                                    <time datetime="2022-07-20">
+                                                        20.07.2022
+                                                    </time>
+                                                </article>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="slider__indicators">
+                                        <li data-slide-to="0"></li>
+                                        <li data-slide-to="1"></li>
+                                        <li data-slide-to="2"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="hr">
+
+            <section class="any-content-with-filter">
+                <div class="container">
+                    <div class="any-content-with-filter__container">
+                        <div class="any-content-with-filter__filters">
+                         
+                        </div>
+                        <div class="any-content-with-filter__content">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
 
 
@@ -232,7 +525,7 @@
                                             d="M12.39 7.55988C12.0319 3.4405 7.73439 1.41925 7.55251 1.33675C7.38249 1.25683 7.19196 1.23129 7.00689 1.26363C2.04564 2.08675 1.29939 4.97425 1.26939 5.09425C1.22857 5.26148 1.23507 5.43676 1.28814 5.6005C7.20564 23.9605 19.5038 27.3636 23.5463 28.483C23.8575 28.5693 24.1144 28.6386 24.3094 28.7024C24.5319 28.7751 24.7737 28.761 24.9863 28.663C25.11 28.6068 28.0313 27.2305 28.7456 22.7418C28.7773 22.5458 28.7458 22.3448 28.6556 22.168C28.5919 22.0443 27.0638 19.1361 22.8263 18.1086C22.6825 18.0719 22.532 18.0706 22.3876 18.1049C22.2432 18.1392 22.1094 18.208 21.9975 18.3055C20.6606 19.4474 18.8138 20.6643 18.0169 20.7899C12.675 18.178 9.69189 13.1661 9.57939 12.2155C9.51377 11.6811 10.7381 9.80425 12.1463 8.278C12.2348 8.18195 12.3022 8.06842 12.3442 7.94474C12.3861 7.82106 12.4018 7.68996 12.39 7.55988V7.55988Z"
                                             fill="black" />
                                     </svg>
-    
+
                                     <span><em>Горячая линия</em></span>
                                 </p>
                             </div>
@@ -242,39 +535,49 @@
                                 <p class="footer-info-list__nav__fast-nav__headline"><em>Основные разделы</em></p>
                                 <ul class="footer-info-list__nav__fast-nav__list">
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">О нас</a>
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">О нас</a>
                                     </li>
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">Проекты</a>
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">Проекты</a>
                                     </li>
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">Партнеры</a>
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">Партнеры</a>
                                     </li>
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">Наша
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">Наша
                                             деятельность</a>
                                     </li>
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">О нас в
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">О нас в
                                             СМИ</a>
                                     </li>
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">Документы</a>
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">Документы</a>
                                     </li>
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">Контакты</a>
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                             <nav class="footer-info-list__nav__fast-nav">
-                                <p class="footer-info-list__nav__fast-nav__headline"><em>Дополнительные <br> возможности</em></p>
+                                <p class="footer-info-list__nav__fast-nav__headline"><em>Дополнительные <br>
+                                        возможности</em></p>
                                 <ul class="footer-info-list__nav__fast-nav__list">
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">Поиск по
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">Поиск по
                                             сайту</a>
                                     </li>
                                     <li class="footer-info-list__nav__fast-nav__list-item">
-                                        <a href="javascript: void(0)" class="footer-info-list__nav__fast-nav__list-link">График приема
+                                        <a href="javascript: void(0)"
+                                            class="footer-info-list__nav__fast-nav__list-link">График приема
                                             граждан</a>
                                     </li>
                                 </ul>
@@ -311,4 +614,5 @@
         });
     </script>
 </body>
+
 </html>
