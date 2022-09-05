@@ -8,12 +8,17 @@
 
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/itc-slider.css">
     <title>Главная | ВСЕРОССИЙСКОЕ ОБЩЕСТВО ГЛУХИХ</title>
 </head>
 
 <body>
 
     <div class="wrapper">
+
+
+
+
         <header class="header-main">
             <div class="header-main__top">
                 <div class="container">
@@ -135,7 +140,47 @@
                 </div>
             </nav>
         </header>
-        <main></main>
+
+
+
+
+
+        <main>
+            <div class="main-slider-index-page">
+                <div class="container">
+                    <div class="slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+                        <div class="slider__wrapper">
+                            <div class="slider__items">
+                              <div class="slider__item">
+                               <img src="../img/bg.png" alt="">
+                              </div>
+                              <div class="slider__item">
+                                <img src="../img/bg.png" alt="">
+
+                              </div>
+                              <div class="slider__item">
+                                <img src="../img/bg.png" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                          <button class="slider__control" data-slide="prev"></button>
+                          <button class="slider__control" data-slide="next"></button>
+                          <ol class="slider__indicators">
+                            <li data-slide-to="0"></li>
+                            <li data-slide-to="1"></li>
+                            <li data-slide-to="2"></li>
+                          </ol>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
@@ -243,6 +288,9 @@
                 </div>
             </div>
         </footer>
+
+
+
         <footer>
             <div class="footer-policy">
                 <div class="container">
@@ -252,8 +300,15 @@
                 </div>
             </div>
         </footer>
+
+
+
     </div>
-
+    <script src="../js/itc-slider.js"></script>
+    <script>
+        document.querySelectorAll('.slider').forEach((el) => {
+            new ItcSlider(el);
+        });
+    </script>
 </body>
-
 </html>
