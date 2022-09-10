@@ -58,8 +58,8 @@
 
 .header-main__nav-fast {
     padding: 24px 0;
-    border-top: 1px solid #8D8D8D;
-    border-bottom: 1px solid #8D8D8D;
+    border-top: 1px solid var(--color-line);
+    border-bottom: 1px solid var(--color-line);
 }
 
 .header-main__nav-fast__nav {
@@ -104,7 +104,6 @@
     border-radius: 0px 0px 20px 20px;
 }
 
-
 .main-slider-index-page .slider__control[data-slide="prev"] {
     left: 25px;
 }
@@ -118,11 +117,13 @@
 }
 
 
+
+
+
 .all-news-sliders__content {
     display: flex;
     justify-content: space-between;
 }
-
 
 .all-news-sliders__content > div {
     width: 395px;
@@ -131,17 +132,95 @@
     margin-right: 11px;
 }
 
-
-
 .all-news-sliders__content-cards .slider__item {
     padding: 5px;
 }
 
 .all-news-sliders__content-cards .card-article  {
     border: 1px solid var(--color-dark-gray);
+    height: 415px;
 }
 
 
+
+
+.content-filter__combine {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+.content-filter__filters-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-filter__filters-list button {
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.content-filter__filters-list button:last-child {
+    margin-right: 0;
+}
+
+
+.content-filter__filters-headline {
+    margin-bottom: 45px;
+}
+
+.content-filter__filters-headline button {
+    width: 100%;
+}
+
+.content-filter__headline {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding-left: 20px;
+}
+
+.content-filter__filters {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-right: 25px;
+}
+
+.content-filter__content {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-left: 1px solid var(--color-line);
+}
+
+.content-filter__content-videos {
+    display: flex;
+}
+.content-filter__content-videos .card-article {
+    max-width: 500px;
+}
+
+.content-filter__content-videos .card-article .image {
+    height: 250px;
+}
+
+.content-filter__content .card-article {
+    padding: 0 20px;
+}
+
+.content-filter__content-other {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 335px));
+    grid-row-gap: 55px;
+    margin-top: 55px;
+}
+
+.content-filter__content-other .card-article {
+    max-width: 335px;
+}
+
+.content-filter__content-other__download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
 
 
 
