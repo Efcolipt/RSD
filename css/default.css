@@ -57,7 +57,7 @@ body {
 }
 
 .container {
-    max-width: 1315px;
+    max-width: 1215px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -155,7 +155,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .headline {
     font-weight: var(--text-bold);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .headline__link {
@@ -200,7 +200,7 @@ h1,h2,h3,h4,h5,h6 {
 .card-article h3 {
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .card-article__info {
@@ -208,4 +208,89 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: auto;
     align-items: center;
     justify-content: space-between;
+}
+
+
+
+.content-filter__combine {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+.content-filter__filters-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.content-filter__filters-list button {
+    margin-right: auto;
+    margin-bottom: 15px;
+}
+
+.content-filter__filters-list button:nth-child(2n) {
+    margin-right: 0;
+}
+
+.content-filter__filters-list button:last-child {
+    margin-right: 0;
+    width: 100%;
+}
+
+
+.content-filter__filters-headline {
+    margin-bottom: 45px;
+}
+
+.content-filter__filters-headline button {
+    width: 100%;
+}
+
+.content-filter__headline {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    padding-left: 20px;
+}
+
+.content-filter__filters {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    padding-right: 25px;
+}
+
+.content-filter__content {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    border-left: 1px solid var(--color-line);
+}
+
+.content-filter__content-videos {
+    display: flex;
+}
+.content-filter__content-videos .card-article {
+    max-width: 500px;
+}
+
+.content-filter__content-videos .card-article .image {
+    height: 250px;
+}
+
+.content-filter__content .card-article {
+    padding: 0 20px;
+}
+
+.content-filter__content-other {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 335px));
+    grid-row-gap: 55px;
+    margin-top: 55px;
+}
+
+.content-filter__content-other .card-article {
+    max-width: 335px;
+}
+
+.content-filter__content-other__download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 55px;
 }
