@@ -220,15 +220,13 @@ h1,h2,h3,h4,h5,h6 {
 .content-filter__filters-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .content-filter__filters-list button {
-    margin-right: auto;
     margin-bottom: 15px;
 }
 
-.content-filter__filters-list button:nth-child(2n) {
-    margin-right: 0;
-}
 
 .content-filter__filters-list button:last-child {
     margin-right: 0;
