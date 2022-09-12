@@ -137,7 +137,7 @@
 }
 
 .all-news-sliders__content-cards .card-article  {
-    border: 1px solid var(--color-dark-gray);
+    border-color: var(--color-dark-gray);
     height: 415px;
 }
 
@@ -174,7 +174,6 @@
 
 .local-news-channel__content .card-article {
     height: 400px;
-    border: 1px solid var(--color-dark-gray);
 }
 
 
