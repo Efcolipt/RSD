@@ -128,7 +128,39 @@
     height: 400px;
 }
 
+.useful-news{
+    background-color: #f4f4f4;
+    padding: 90px 0;
+}
 
+.useful-news__area{
+    background-color: #f4f4f4;
+}
+
+.useful-news__link{
+    align-self: center;
+    font-size: 1.4rem;
+    font-weight: 700; 
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    padding: 30px 0;
+    border-radius: 10px;
+}
+
+.useful-news__headline{
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.useful-news__content{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 335px));
+    grid-gap: 25px;
+    margin-top: 45px;
+}
 
 
 
