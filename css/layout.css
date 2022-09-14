@@ -129,19 +129,14 @@
 }
 
 .useful-news{
-    background-color: #f4f4f4;
+    background-color: var(--color-white-l2);
     padding: 90px 0;
 }
 
-.useful-news__area{
-    background-color: #f4f4f4;
-}
-
 .useful-news__link{
-    align-self: center;
     font-size: 1.4rem;
     font-weight: 700; 
-    background-color: #ffffff;
+    background-color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,7 +146,7 @@
 }
 
 .useful-news__headline{
-    font-weight: bold;
+    font-weight: var(--text-bold);
     font-size: 1.4rem;
 }
 
