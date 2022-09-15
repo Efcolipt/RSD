@@ -1,0 +1,117 @@
+.history_link_container{
+    border: white;
+    margin-top: 30px;
+}
+.first_block_container_history_header{
+    font-size: 36px;
+    border: white;
+    margin-top: 50px;
+    font-weight:500px;
+    
+}
+.first_block_container_history_text_inside{
+    margin-top: 36px;
+    
+}
+.first_block_container_history_header_img{
+    float: left;
+    width: 350px;
+    height: 350px;
+    left: 301px;
+    top: 427px;
+    margin-left: 36px;
+    margin-right: 52px;
+    margin-top: 36px;
+    margin-bottom: 320px;
+    
+}
+.first_block_container_history_text{
+    margin-right: 90px;
+    margin-bottom: 91px;
+    font-size: 18px;
+}
+.second_block_container_history_header
+{
+    font-size: 36px;
+    border: white;
+    margin-top: 50px;
+    font-weight:500px;
+    
+}
+.second_block_container_history_grid_list{
+    list-style-type: none;
+    padding-left: 20px;
+}
+.second_block_container_history_grid_text_item{
+    padding-bottom: 14px;
+}
+
+.second_block_container_history_grid{
+
+    margin-top: 55px;
+    margin-right: 155px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 0.3fr 0.8fr 3.6fr;
+    gap: 25px;
+   
+}
+
+.second_block_container_history_grid_img{
+    grid-row: 1/6;
+}
+.second_block_container_history_grid_text{
+    padding-top: 25px;
+    font-size: 18px;
+}
+.second_block_container_history_grid_year{
+    font-weight: 900;
+    padding-top: 20px;
+    font-size: 28px;
+}
+
+.red_line{
+    padding-top:25px ;
+    height: 900px;
+    position: absolute;
+    left: 4.2%;
+    z-index: 1;
+}
+.elipse1
+{
+    padding-top: 20px;
+    z-index: 2;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.elipse2{
+    padding-top: 315px;
+    z-index: 2;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.elipse3{
+    padding-top: 65px;
+    z-index: 2;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+.elipse4{
+    padding-top: 180px;
+    z-index: 2;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.elipse5{
+    padding-top: 80px;
+    z-index: 2;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
