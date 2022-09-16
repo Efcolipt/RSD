@@ -59,6 +59,7 @@
 
 .second_block_container_history_grid_img{
     grid-row: 1/6;
+    position: relative;
 }
 .second_block_container_history_grid_text{
     padding-top: 25px;
@@ -74,7 +75,7 @@
     padding-top:25px ;
     height: 900px;
     position: absolute;
-    left: 4.2%;
+    left: 50%;
     z-index: 1;
 }
 .elipse1
@@ -114,4 +115,99 @@
     display: flex;
     margin-right: auto;
     margin-left: auto;
+}
+
+/* .second_block_container_history{
+    margin-bottom: 120px;
+    border: 1px solid black;
+} */
+.third_block_container_history{
+    margin-top: 120px;
+}
+.tird_block_container_history_grid{
+    margin-top: 80px;
+}
+.tird_block_container_history_grid div{
+    /* border: 1px solid black; */
+    text-align: center;
+    /* background-color: aquamarine; */
+    
+
+}
+
+.tird_block_container_history_grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    /* column-gap: 40px; */
+    grid-auto-rows: minmax(143px,auto);
+    /* grid-auto-flow:; */
+    /* grid-template-rows: 2fr 1fr; */
+}
+.tird_block_container_history_grid_line_ellipse1{
+    grid-column: 1/5;
+    position: relative;
+}
+
+.third_block_line1{
+    position: inherit;
+    padding-top: 38px;
+    padding-left: 160px;
+    width: 1279px;
+    z-index: 1;
+
+}
+.tird_block_ellipse1{
+    position: absolute;
+    left: 135px;
+    top:13px
+}
+.tird_block_ellipse2{
+    position: absolute;
+    left: 450px;
+    top:13px
+}
+.tird_block_ellipse3{
+    position: absolute;
+    left: 775px;
+    top:13px
+}    
+.tird_block_ellipse4{
+    position: absolute;
+    left: 1095px;
+    top:13px
+}    
+.tird_block_container_history_grid_line_ellipse2{
+    grid-column: 1/5;
+    position: relative;
+}
+.third_block_line2{
+    position: inherit;
+    padding-top: 38px;
+    /* padding-left: 160px; */
+    width: 100%;
+    z-index: 1;
+
+
+}
+.tird_block_container_history_grid_line_ellipse3{
+    grid-column: 1/5;
+    position: relative;
+}
+.third_block_line3{
+    position: inherit;
+    padding-top: 38px;
+    padding-right: 160px;
+    width: 100%;
+    z-index: 1;
+
+
+}
+.third_block_under_text{
+    margin-top: 25px;
+    font-size: 22;
+    font-weight: 900;
+}
+.third_block_under_year{
+    margin-top: 35px;
+    font-size: 18;
 }
