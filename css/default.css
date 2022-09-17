@@ -351,7 +351,6 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 1.4rem;
 }
 
-
 .headline__link > a:first-child {
     width: 28px;
     height: 28px;
@@ -363,6 +362,10 @@ h1,h2,h3,h4,h5,h6 {
     height: auto;
 }
 
+.headline__main > span {
+    font-size: 2.1rem;
+    font-weight: var(--text-bold);
+}
 
 .card-article {
     font-weight: var(--text-bold);
