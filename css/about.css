@@ -2,31 +2,6 @@ html {
     overflow-x: hidden;
 }
 
-.breadcrumb {
-    margin-bottom: 50px;
-    margin-top: 30px;
-}
-
-.breadcrumb ul {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
-
-.breadcrumb li a {
-    color: var(--color-dark-black);
-    font-size: .9rem;
-}
-
-.breadcrumb li:not(:last-child)::after {
-    display: inline-block;
-    margin: 0 15px;
-    content: ">";
-}
-
-
 .about-us__content {
     display: flex;
 }
@@ -179,4 +154,33 @@ html {
 
 .about-directors__ellipse {
     margin-top: 20px;
+}
+
+.about-videos {
+    margin-top: 130px;
+    margin-bottom: 200px;
+}
+
+.about-videos__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.about-videos__item {
+    position: relative;
+}
+
+.about-videos__item img:first-child {
+    max-width: 695px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+}
+
+.about-videos__item img:last-child {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
