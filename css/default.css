@@ -367,6 +367,30 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: var(--text-bold);
 }
 
+.breadcrumb {
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.breadcrumb li a {
+    color: var(--color-dark-black);
+    font-size: .9rem;
+}
+
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 15px;
+    content: ">";
+}
+
 .card-article {
     font-weight: var(--text-bold);
     border-radius: 10px;
