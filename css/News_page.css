@@ -1,0 +1,158 @@
+/* делаю блок "Главные новости с телеграмом" */
+.header_block{
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+
+}
+/* "Ставлю стрелку на синий круг,поверх него в заголовке" */
+.whight_arroy{
+
+    position: relative;
+    top:-40px;
+    left:10px
+    
+}
+/* "Отступ сверху делаю картинке телеграм чтобы выровнять ее со словами" */
+.blue_ball_whight_arroy{
+    margin-top: 13px
+}
+/* "Размер главнойй надиси" */
+.header_text{
+    font-size: 50px;
+}
+/* Работаю с первым блоком даю отступы формирую грид-таблицу в которой будут распологаться подблоки */
+.main_blok{
+    margin-top: 30px;
+    display: grid;
+    gap: 50px;
+    grid-auto-flow: column;
+}
+/* "Задаю размер шрифта в блоке, во всех р" */
+.main_blok p{
+    font-size: 22px;
+}
+/* ставлю черную линию разделяющуу слайдер и текст с текстом и картинками */
+.main_blok-black_line{
+    grid-row: 1/4;
+    text-align: center;
+}
+/* Задаю изображению в блоке нужную высоту */
+.main_blok-black_line img{
+    height: 980px;
+}
+/* делаю отступ между словами разделяю обзацы */
+.main_blok-text p{
+    margin-top: 20px;
+
+}
+
+
+/* Задаю грид блок в большом блоке чтобы расположить элементы по порядку */
+.main_blok-bio{
+    display: grid;
+}
+/* выношу ссылку "поделиться" в отдельную строчку b bpvtyz. tuj gjkj;tybt */
+.bio-block{
+    grid-column: 1/8;
+    text-align: center;
+    padding-right:35px ;
+}
+/* В блоке состоящем из слайдера текста и ссылки я даю слайдеру 1,2 фр тексту 1,2 фр и ссылкам 0,2 фр */
+.slider_text_bio{
+    display: grid;
+    grid-template-rows: 1.2fr 1.2fr 0.1fr;
+}
+/* задаю блоку нужную позицию в таблице */
+.slider_text_bio{
+    grid-row: 1/4;
+    row-gap: 20px;
+}
+/* ссылке в блоке даю нужный размер */
+.main_blok-bio a{
+    font-size: 22px;
+
+}
+/* задаю нужные размеры картинке */
+.slider_img img{
+    width: 835px;
+    height: 440px;
+}
+/* задаю нужные размеры линии в низу */
+.ordinary_line{
+    width: 177px;
+}
+/* хештегу задаю нужный цвет */
+.hesh_teg{
+    color: #0066FF;
+}
+/* задаю картинкам с права нужные габариты */
+.main_blok-text_img figure img{
+    width: 240px;
+    height: 170px;
+
+}
+/* начинаю работать с нижним блоком с жестом пальцем вверх на синим фоне  задаю ширину самому обьекту*/
+.cool{
+    width: 100px;
+}
+/* задаю параметры самому жесту */
+.cool-hand{
+    position: relative;
+    top:-45px;
+    left:14px;
+    background-color: #C6DEF7;
+    border: none;
+    cursor: pointer;
+
+}
+/* работаю со счетом на синим фоне */
+.cool-score{
+    position: relative;
+    top:-55px;
+    left:14px;
+    color: #499BEA;
+}
+/* новый блок список размещаю на странице */
+.news_list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 100px;
+}
+/* делаю нижний ряд с кнопкой */
+.news_list-button_аurther{
+    margin-top: 97px;
+    grid-column: 1/4;
+    text-align: center;
+    
+}
+/* сама кнопка задаю значения */
+.news_list-button_аurther button{
+    color: #FF2E2E;
+    border-radius: 10px;
+    background-color: white;
+    height: 46px;
+    padding: 0 25px;
+    border: 1px solid transparent;
+    border-color: var(--color-accent);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: var(--text-bold);
+}
+/* делаю кнопку нажимающююся */
+.news_list-button_аurther button:hover{
+    background-color: #FF2E2E;
+    color: white;
+}
+/* задаю размеры картинки */
+.news_list-text_img figure img{
+    width: 375px;
+    height: 260px;
+}
+/* задаю размеры текту внутри  */
+.news_list-text_img figcaption{
+    font-size: 22px;
+}
+.news_list-text_img time{
+    font-size: 16px;
+}
