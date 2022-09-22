@@ -26,18 +26,18 @@
     --color-white: #fff;
     --color-white-l2: #f4f4f4;
 
-    --color-badge-svao: #FFF7BD;
-    --color-badge-szao: #F6DBE7;
-    --color-badge-vao: #FCDAB3;
-    --color-badge-uzao: #AFC6DF;
-    --color-badge-sao: #ECF4CC;
-    --color-badge-zao: #D6BBD6;
-    --color-badge-tsao: #FBB5A3;
-    --color-badge-zelao: #D9EDC8;
-    --color-badge-uvao: #ADDEF7;
+    --color-badge-svao: #F68121;
+    --color-badge-szao: #2E3192;
+    --color-badge-vao: #47B85E;
+    --color-badge-uzao: #00A0A8;
+    --color-badge-sao: #00C1F2;
+    --color-badge-zao: #E01B50;
+    --color-badge-tsao: #FE7676;
+    --color-badge-zelao: #663398;
+    --color-badge-uvao: #E66AC0;
     --color-badge-tao: #FBAB89;
-    --color-badge-uao: #CCE5BC;
-    --color-badge-nao: #8AD2A1;
+    --color-badge-uao: #FEC619;
+    --color-badge-nao: #FEC619;
 }
 
 * {
