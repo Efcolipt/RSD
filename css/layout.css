@@ -153,6 +153,7 @@ section:not(:last-child) {
     text-align: center;
     z-index: 10;
     display: flex;
+    align-items: center;
 }
 
 .important-info__item h3 > span {
@@ -224,11 +225,20 @@ section:not(:last-child) {
     gap: 15px; 
     padding: 30px 0;
     border-radius: 10px;
+    transition: color .3s ease, background-color .3s ease;
 }
 
-.useful-sites__headline{
-    font-weight: var(--text-bold);
-    font-size: 1.4rem;
+.useful-sites__link svg {
+    fill: var(--color-accent);
+}
+
+.useful-sites__link:hover {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+}
+
+.useful-sites__link:hover svg {
+    fill: var(--color-white);
 }
 
 .useful-sites__content{
