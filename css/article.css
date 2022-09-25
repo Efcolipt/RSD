@@ -76,7 +76,7 @@
 
 .article__hashtags a {
     color: var(--color-hashtag);
-    font-weight: var(--text-bold);
+    font-weight: bold;
 }
 
 .article__line-actions{

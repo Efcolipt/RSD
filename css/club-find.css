@@ -16,7 +16,7 @@
     background-color: transparent;
     border-radius: 8px;
     height: 45px;
-    font-weight: var(--text-bold);
+    font-weight: bold;
     cursor: pointer;
     transition: color .3 ease, background-color .3s ease;
 }
@@ -145,7 +145,7 @@
 
 .club-find__item h3 {
     font-size: 1.5rem;
-    font-weight: var(--text-bold);
+    font-weight: bold;
     margin-bottom: 20px;
 }
 

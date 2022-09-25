@@ -12,7 +12,7 @@
 .main-slider .slider__item > div > h1 {
     font-size: 3.4rem;
     color: var(--color-white);
-    font-weight: bold;
+    font-weight: bold;;
     line-height: 110%;
 }
 
@@ -98,7 +98,7 @@
 
 .important-info__item h3 > span {
     font-size: 1.75rem;
-    font-weight: var(--text-bold);
+    font-weight: bold;
 }
 
 .useful-info__content .slider__item{
@@ -142,7 +142,7 @@
 .useful-info__item > div h3 {
     font-size: 1.75rem;
     color: var(--color-white);
-    font-weight: var(--text-bold);
+    font-weight: bold;
 }
 
 .useful-info__item > img {
@@ -197,7 +197,7 @@
 .reference-book__social h3, .reference-book__local h3{
     font-size: 1.2rem;
     margin-bottom: 35px;
-    font-weight: bold;
+    font-weight: bold;;
 }
 
 .reference-book__social-links {
@@ -245,7 +245,7 @@
     margin-bottom: 35px;
     font-size: 1.1rem;
     transition: color .3s ease, background-color .3s ease;
-    font-weight: var(--text-bold);
+    font-weight: bold;
 }
 
 .reference-book__services a svg{
