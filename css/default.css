@@ -25,6 +25,7 @@
     --color-line: #8D8D8D;
     --color-white: #fff;
     --color-white-l2: #f4f4f4;
+    --color-hashtag: #0066FF;
 
     --color-badge-svao: #F68121;
     --color-badge-szao: #2E3192;
@@ -68,6 +69,10 @@ html {
 
 body {
     font-family: var(--font-OpenSans);
+}
+
+section:not(:last-child) {
+    margin-bottom: 95px;
 }
 
 .container {
@@ -337,16 +342,12 @@ body {
 .headline {
     font-weight: var(--text-bold);
     margin-bottom: 25px;
-}
-
-.headline__link {
     display: flex;
     align-items: center;
+    gap:12px;
 }
 
 .headline__link > span {
-    margin-left: 12px;
-    margin-right: 12px;
     font-size: 1.4rem;
 }
 
@@ -393,7 +394,6 @@ body {
 .card-article {
     font-weight: var(--text-bold);
     border-radius: 10px;
-    padding: 13px;
     padding: 14px 14px 25px 14px;
     max-width: 405px;
     display: flex;
@@ -614,4 +614,60 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 55px;
+}
+
+.all-news-sliders__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.all-news-sliders__content > div {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 7px;
+    margin-right: 11px;
+}
+
+.all-news-sliders__content-cards .slider__item {
+    padding: 5px;
+}
+
+.all-news-sliders__content-cards .card-article  {
+    border-color: var(--color-dark-gray);
+    height: 415px;
+}
+
+.local-news-channel__headline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.local-news-channel__headline .headline {
+    margin-right: 80px;
+    margin-bottom: 0;
+}
+
+.local-news-channel__constituencies {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.local-news-channel__constituencies span {
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.local-news-channel__content .slider__item{
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.local-news-channel__content .card-article {
+    height: 400px;
 }
