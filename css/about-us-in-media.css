@@ -1,0 +1,29 @@
+.about-us-in-media__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+}
+
+.about-us-in-media__list .card-article {
+    padding: 0;
+    max-width: 100%;
+    position: relative;
+}
+
+.about-us-in-media__list .card-article .image {
+    height: 320px;
+}
+
+.about-us-in-media .btn-default {
+    margin: 100px auto 0 auto;
+}
+
+.about-us-in-media__list {
+    margin-top: 50px;
+}
+
+.badge {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
