@@ -21,3 +21,7 @@
     })
 
 });
+
+new Modal({
+    linkAttributeName: 'data-modal', 
+});
