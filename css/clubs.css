@@ -1,0 +1,24 @@
+.clubs__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px 25px;
+}
+
+
+.clubs__item .image {
+    height: 200px;
+}
+
+.clubs__item h3 {
+    font-size: 1.5rem;
+    font-weight: var(--text-bold);
+}
+
+.clubs__item p {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.clubs__item a {
+    width: 150px;
+}

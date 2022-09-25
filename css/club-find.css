@@ -136,7 +136,7 @@
 .club-find__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px;
+    grid-gap: 60px 25px;
 }
 
 .club-find__item .image {
