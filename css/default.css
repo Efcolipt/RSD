@@ -328,6 +328,10 @@ section:not(:last-child) {
     color: var(--color-white);
 }
 
+.btn-default--accent {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
 
 .hr {
     width: 100%;
@@ -533,6 +537,38 @@ section:not(:last-child) {
     background-color: var(--color-badge-nao);
 }
 
+.card-info {
+    border-radius: 10px;
+    padding: 14px 14px 25px 14px;
+    max-width: 405px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+}
+
+.card-info h3{
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: var(--text-bold);
+}
+
+.card-info .card-info__deftext {
+    margin-top: 10px;
+}
+
+.card-info .card-info__contact {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-info .card-info__contact-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .content-filter__combine {
     display: grid;
     grid-template-columns: 340px 1fr;
@@ -542,6 +578,15 @@ section:not(:last-child) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 40px;
+}
+
+.contente-filter__filters-list--fullwidth {
+    margin-top: 15px;
+}
+
+.contente-filter__filters-list--fullwidth button {
+    width: 100%;
 }
 
 .content-filter__filters-list button {
@@ -551,10 +596,6 @@ section:not(:last-child) {
 .content-filter__filters-list button:last-child {
     margin-right: 0;
     width: 100%;
-}
-
-.content-filter__filters-headline {
-    margin-bottom: 45px;
 }
 
 .content-filter__filters-headline button {
@@ -580,6 +621,7 @@ section:not(:last-child) {
 }
 
 .content-filter__content-videos {
+    margin-bottom: 55px;
     display: flex;
 }
 .content-filter__content-videos .card-article {
@@ -598,7 +640,6 @@ section:not(:last-child) {
     display: grid;
     grid-template-columns: repeat(3, minmax(auto, 335px));
     grid-row-gap: 55px;
-    margin-top: 55px;
 }
 
 .content-filter__content-other .card-article {
