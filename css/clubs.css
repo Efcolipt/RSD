@@ -4,6 +4,10 @@
     grid-gap: 60px 25px;
 }
 
+.clubs__item {
+    display: flex;
+    flex-direction: column;
+}
 
 .clubs__item .image {
     height: 200px;
@@ -21,4 +25,5 @@
 
 .clubs__item a {
     width: 150px;
+    margin-top: auto;
 }

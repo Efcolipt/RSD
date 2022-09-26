@@ -93,6 +93,14 @@ section:not(:last-child) {
     margin: 0 auto;
 }
 
+.footer {
+    margin-top: 95px;
+}
+
+.mt-none {
+    margin-top: 0;
+}
+
 .form__headline p, .form__headline small{
     margin-bottom: 40px;
     display: block;

@@ -105,10 +105,10 @@ html {
     background-color: var(--color-accent);
 }
 
-.about-directors__item:nth-child(2n+5):before {
+.about-directors__item:nth-child(5):before, .about-directors__item:nth-child(8):after, .about-directors__item:nth-child(4):after, .about-directors__item:nth-child(9):before, .about-directors__item:nth-child(12):after   {
     content: "";
     display: block;
-    width: 300px;
+    width: 100vw;
     height: 3px;
     position: absolute;
     bottom: 22px;
