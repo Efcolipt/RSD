@@ -1,1 +1,57 @@
-.contacts
+.contacts-helper__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.contacts-helper__item {
+    position: relative;
+}
+
+.contacts-helper__item .image {
+    height: 450px;
+}
+
+.contacts-helper__item h3 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    bottom: 50px;
+}
+
+.contacts-about__about {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.contacts-about__about h3 {
+    font-size: 1.1rem;
+}
+
+.contacts-about__about .image {
+    height: 220px;
+    width: 155px;
+}
+
+.contacts-about__content .hr {
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.contacts-about__contact > div {
+    margin-bottom: 20px;
+}
+
+.contacts-about__contact div:last-child {
+    margin-bottom: 0;
+}
+
+.contacts-text__content > div {
+    margin-bottom: 20px;
+}
+
+.contacts-text__content div:last-child {
+    margin-bottom: 0;
+}

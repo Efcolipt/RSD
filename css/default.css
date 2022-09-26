@@ -47,7 +47,6 @@
     box-sizing: border-box;
     vertical-align: baseline;
     font-size: 100%;
-    font: inherit;
 }
 
 a {
@@ -59,7 +58,7 @@ ul, ol {
     list-style: none;
 } 
 
-em{
+b {
     font-weight: bold;
 }
 
@@ -313,7 +312,7 @@ section:not(:last-child) {
     color: var(--color-dark-gray)
 }
 
-.footer-found-error em {
+.footer-found-error b {
     color: var(--color-default);
 }
 
