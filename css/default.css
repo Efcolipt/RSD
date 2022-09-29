@@ -229,10 +229,13 @@ section:not(:last-child) {
     gap: 5px;
     background: #fff;
     border-radius: 8px;
-    padding: 10px 25px;
+    padding: 15px 15px;
+    width: 185px;
+    font-size: 0.9rem;
     top: 100%;
     z-index: 80;
-    left: -25px;
+    left: 0;
+    border: 1px solid var(--color-line);
 }
 
 .header-main__nav-pages__nav-link span {
