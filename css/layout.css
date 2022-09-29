@@ -46,7 +46,7 @@
 }
 
 .main-slider .slider__item .image {
-    border-radius: 0px 0px 20px 20px;
+    border-radius: 8px;
 }
 
 .main-slider .slider__control[data-slide="prev"] {

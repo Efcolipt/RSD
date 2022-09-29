@@ -22,6 +22,13 @@
 
 });
 
+
+[...document.getElementsByClassName('header-main__nav-pages__nav-item') || []].forEach(element => {
+    element.addEventListener('click', function () {
+        this.classList.toggle('header-main__nav-pages__nav-item--submenu-active')
+    })
+})
+
 new Modal({
     linkAttributeName: 'data-modal', 
 });
