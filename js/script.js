@@ -24,11 +24,16 @@
 
 
 [...document.getElementsByClassName('header-main__nav-pages__nav-item') || []].forEach(element => {
-    element.addEventListener('click', function () {
+    element.addEventListener("mouseover", function () {
         this.classList.toggle('header-main__nav-pages__nav-item--submenu-active')
-    })
+    }, false);
+    element.addEventListener("mouseout", function () {
+        this.classList.toggle('header-main__nav-pages__nav-item--submenu-active')
+    }, false);
 })
 
 new Modal({
     linkAttributeName: 'data-modal', 
 });
+
+
