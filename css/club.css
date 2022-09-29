@@ -1,0 +1,89 @@
+.club-slider .slider__control {
+    position: absolute;
+    bottom: 70px;
+
+}
+
+.club-slider .slider__control[data-slide="next"] {
+    right: 30px;
+}
+
+.club-slider .slider__control[data-slide="prev"] {
+    left: 30px;
+}
+
+.club-gallery .slider__control {
+    position: absolute;
+    bottom: 70px;
+
+}
+
+.club-gallery .slider__control[data-slide="next"] {
+    right: 30px;
+}
+
+.club-gallery .slider__control[data-slide="prev"] {
+    left: 30px;
+}
+
+
+
+.club-slider__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 105px;
+}
+
+.club-slider__content div:last-child > div:first-child > div {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.club-slider__content div:last-child > div:not(:first-child) {
+    margin-top: 50px;
+}
+
+.club-slider__content div:first-child {
+    max-width: 800px;
+}
+
+.club-slider__content div:first-child p:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.club-slider__content div:last-child > div .headline {
+    margin-bottom: 10px;
+}
+
+.club-slider__content div:last-child > div a {
+    display: block;
+}
+
+.club-slider__content div:last-child > div:last-child p {
+    display: flex; 
+    gap: 15px;
+}
+
+.club-slider__content div:last-child > div:first-child .image {
+    width: 80px;
+    height: 100px;
+}
+
+
+#map {
+    min-width: 1000px;
+    height: 450px;
+}
+
+.club-map .headline {
+    margin-bottom: 10px;
+}
+
+.club-map p {
+    margin-bottom: 40px;
+}
+
+.club-slider .slider {
+    margin-bottom: 40px;
+}
