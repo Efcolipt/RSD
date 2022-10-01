@@ -10,6 +10,18 @@
     :root {
         --fz-size: 0.80;
     }
+
+    .article__line {
+        display: none;
+    }
+
+    .article__other-articles {
+        display: none;
+    }
+
+    .article__content {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 970px) {
@@ -142,6 +154,7 @@
 }
 
 @media only screen and (max-width: 760px){
+
     .footer-info-list__nav {
         display: none;
     }
@@ -215,9 +228,6 @@
         display: none;
     } 
 
-}
-
-@media only screen and (max-width: 760px){
     .content-filter__combine {
         grid-template-columns: 195px 1fr;
     }
@@ -277,6 +287,18 @@
         width: 65px;
         height: 35px;
         margin-left: 10px;
+    }
+
+    .article-news__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .article__line-actions {
+        min-width: 30px;
+    }
+    
+    .article__actions {
+        margin-top: 30px;
     }
 }
 
