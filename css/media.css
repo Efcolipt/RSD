@@ -345,6 +345,7 @@
         grid-column: 1 / -1;
         grid-row-start: 3;
         border: none;
+        margin-top: 15px;
     }
 
     .content-filter__content-videos > .card-article {
@@ -459,5 +460,9 @@
     
     .useful-sites__link {
         padding: 20px 0;
+    }
+
+    .card-info {
+        padding: 0;
     }
 }
