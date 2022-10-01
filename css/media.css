@@ -405,6 +405,13 @@
         max-width: 100%;
     }
 
+    .about-us-in-media__list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-us-in-media .btn-default {
+        margin: 50px auto 0 auto;
+    }
 
 
 }
@@ -465,4 +472,5 @@
     .card-info {
         padding: 0;
     }
+    
 }
