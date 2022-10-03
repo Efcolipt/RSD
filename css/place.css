@@ -29,7 +29,6 @@
 
 .place__organizer-list {
     display: flex;
-    align-items: center;
     gap: 25px;
 }
 
@@ -68,7 +67,7 @@
     margin-bottom: 5px;
 }
 
-.place__info > div > div:first-child {
+.place__info div > div:first-child {
     margin-top: 0;
 }
 

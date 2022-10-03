@@ -30,10 +30,6 @@
         gap: 20px;
     }
 
-    .goverment-docs__headline > div {
-        gap: 20px;
-    }
-
     .reference-book__social-links {
         grid-template-columns: repeat(4, minmax(max-content, auto));
     }
@@ -466,7 +462,7 @@
     }
 
     .slider__control-container::after, .slider__control-container::before {
-        width: 27%;
+        width: 18%;
     }
 
     .useful-sites__content {
@@ -479,6 +475,10 @@
 
     .card-info {
         padding: 0;
+    }
+
+    .header-main__actions-btns span {
+        display: none;
     }
     
 }

@@ -229,12 +229,14 @@
 .goverment-docs__headline > div {
     display: flex;
     align-items: center;
-    gap: 35px;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .goverment-docs__headline > div button {
     font-size: 1.3rem;
     font-weight: bold;
+    flex-grow: 1;
 }
 
 .reference-book__content {
