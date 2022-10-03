@@ -177,6 +177,16 @@
         display: none;
     }
 
+    .article__social div:last-child svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .article__like button svg {
+        width: 20px;
+        height: 20px;
+    }
+
     .reference-book__content {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -450,6 +460,27 @@
     .important-info__item h3 {
         min-width: 186px;
         gap: 10px;
+    }
+
+    .article__actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .article__published {
+        justify-content: center;
+    }
+
+    .article-news__list {
+        grid-template-columns: 1fr;
+    }
+
+    .article__like {
+        display: none;
+    }
+
+    .article__actions > div {
+        width: 100%;
     }
 
     .header-main__nav-pages__brand-link img, .footer-brand img{
