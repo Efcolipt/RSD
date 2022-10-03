@@ -467,6 +467,7 @@ section:not(:last-child) {
     display: flex;
     align-items: center;
     gap:12px;
+    flex-wrap: wrap;
 }
 
 .headline__link > span {

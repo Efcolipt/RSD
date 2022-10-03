@@ -165,6 +165,10 @@
     .history-us__info {
         column-gap: 20px;
     }
+
+    .place__info .image {
+        max-width: 490px;
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -314,6 +318,15 @@
     .article__actions {
         margin-top: 30px;
     }
+    
+    .place__info .image {
+        max-width: 100%;
+    }
+
+    .place__info {
+        flex-direction: column;
+        align-items: baseline;
+    }
 }
 
 @media only screen and (max-width: 596px) {
@@ -329,6 +342,7 @@
         padding: 0 15px;
         height: 40px;
     }
+
 }
 
 @media only screen and (max-width: 525px) {
@@ -417,6 +431,14 @@
         margin: 50px auto 0 auto;
     }
 
+    .place__main {
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    .place__main .image {
+        width: 100%;
+    }
 
 }
 
