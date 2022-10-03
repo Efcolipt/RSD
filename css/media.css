@@ -343,6 +343,10 @@
         height: 40px;
     }
 
+    .article-topic__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
 
 @media only screen and (max-width: 525px) {
@@ -501,6 +505,10 @@
 
     .header-main__actions-btns span {
         display: none;
+    }
+
+    .article-topic__list {
+        grid-template-columns: 1fr;
     }
     
 }
