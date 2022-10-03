@@ -151,6 +151,24 @@
     .reference-book__social, .reference-book__local {
         padding: 25px;
     }
+
+    .about-us__content {
+        flex-direction: column;
+    }
+
+    .about-us__img {
+        min-width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .about-us__img img {
+        height: 430px;
+    }
+
+    .history-us__info {
+        column-gap: 20px;
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -359,16 +377,6 @@
 
     .content-filter__content-videos {
         margin-top: 50px;
-    }
-
-    .content-filter__filters-list {
-        margin-top: 15px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
-    }
-
-    .content-filter__filters-list button {
-        margin-bottom: 0;
     }
 
     .content-filter__headline {

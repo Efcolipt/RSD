@@ -697,8 +697,10 @@ section:not(:last-child) {
 }
 
 .content-filter__filters-list {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 40px;
+    gap: 12px;
 }
 
 .contente-filter__filters-list--fullwidth {
@@ -710,7 +712,7 @@ section:not(:last-child) {
 }
 
 .content-filter__filters-list button {
-    margin-bottom: 15px;
+    flex-grow: 1;
 }
 
 .content-filter__filters-list button:last-child {

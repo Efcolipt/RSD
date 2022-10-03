@@ -29,6 +29,7 @@ html {
 }
 
 .history-us__content {
+    padding: 0 40px;
     margin-top: 60px;
     display: grid;
     grid-template-columns: 0 1fr;
