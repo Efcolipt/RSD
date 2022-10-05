@@ -215,6 +215,33 @@ section:not(:last-child) {
     align-items: center;
 }
 
+.header-main__mobile-menu__item {
+    padding: 25px 45px;
+    border-bottom: 1px solid var(--color-line);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.header-main__mobile-menu__link svg {
+    margin-left: 10px;
+}
+
+.header-main__mobile-menu > ul {
+    display: none;
+}
+
+.header-main__mobile-menu__item--active > ul {
+    display: block;
+}
+
+.header-main__mobile-menu--active > ul {
+    display: block;
+}
+
+.header-main__mobile-menu__subnav {
+    display: none;
+}
+
 .header-main__nav-pages__nav {
     display: flex;
     align-items: center;

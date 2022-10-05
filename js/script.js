@@ -1,6 +1,6 @@
 
 
-[...document.getElementsByClassName('select') || []].forEach(select => {
+[...document.getElementsByClassName('select')].forEach(select => {
     select.addEventListener('click', function (_) {
         this.classList.toggle('select--active')
     })
@@ -23,14 +23,27 @@
 });
 
 
-[...document.getElementsByClassName('header-main__nav-pages__nav-item') || []].forEach(element => {
+[...document.getElementsByClassName('header-main__nav-pages__nav-item')].forEach(element => {
     element.addEventListener("mouseover", function () {
         this.classList.toggle('header-main__nav-pages__nav-item--submenu-active')
     }, false);
     element.addEventListener("mouseout", function () {
         this.classList.toggle('header-main__nav-pages__nav-item--submenu-active')
     }, false);
+});
+
+[...document.getElementsByClassName('header-main__mobile-menu__item')].forEach(element => {
+    element.addEventListener('click', function () {
+        this.classList.toggle('header-main__mobile-menu__item--active')
+    })
 })
+
+
+document.getElementById('mobile-burger').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.toggle('header-main__mobile-menu--active')
+})
+
+
 
 new Modal({
     linkAttributeName: 'data-modal', 
