@@ -169,6 +169,10 @@
     .place__info .image {
         max-width: 490px;
     }
+
+    .club-find__list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -357,6 +361,14 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .club-find__content {
+        grid-template-columns: 1fr;
+    }
+
+    .club-find__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media only screen and (max-width: 525px) {
@@ -460,6 +472,10 @@
     .important-info__item h3 {
         min-width: 186px;
         gap: 10px;
+    }
+    
+    .club-find__list {
+        grid-template-columns: 1fr;
     }
 
     .article__actions {
