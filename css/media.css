@@ -193,6 +193,11 @@
         display: none;
     }
 
+    .local-place__list {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
     .contacts-helper__item .image {
         height: 350px;
     }
@@ -378,6 +383,24 @@
 @media only screen and (max-width: 596px) {
     .main-slider .slider__item > div {
         left: 80px;
+    }
+
+    .local-place__content {
+        grid-template-columns: 1fr;
+    }
+
+    .local-place__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .local-place__filters-hash {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .local-place__filters-hash button {
+        flex-grow: 1;
+        min-width: 75px;
     }
 
     .main-slider .slider__item .image {
@@ -627,6 +650,10 @@
 
 @media only screen and (max-width: 430px) {
     .clubs__list {
+        grid-template-columns: 1fr;
+    }
+
+    .local-place__list {
         grid-template-columns: 1fr;
     }
 }
