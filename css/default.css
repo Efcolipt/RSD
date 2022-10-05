@@ -475,6 +475,10 @@ section:not(:last-child) {
     flex-wrap: wrap;
 }
 
+.headline__link > * {
+    flex-grow: 1;
+}
+
 .headline__link > span {
     font-size: 1.4rem;
 }

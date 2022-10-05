@@ -181,12 +181,20 @@
     .form__control textarea {
         min-width: 100%;
     }
+
+    .contacts-helper__list {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media only screen and (max-width: 760px){
 
     .footer-info-list__nav {
         display: none;
+    }
+
+    .contacts-helper__item .image {
+        height: 350px;
     }
 
     .clubs__list {
@@ -409,6 +417,11 @@
         --fz-size: 0.70;
     }
 
+    .contacts-about__contact svg {
+        width: 45px;
+        height: 45px;
+    }
+
     .all-news-sliders__content > div {
         flex: 0 0 100%;
         max-width: 100%;
@@ -504,6 +517,10 @@
     .important-info__item h3 {
         min-width: 186px;
         gap: 10px;
+    }
+
+    .contacts-helper__list {
+        grid-template-columns: 1fr;
     }
     
     .consult__list-items {
