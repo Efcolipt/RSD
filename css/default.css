@@ -143,6 +143,11 @@ section:not(:last-child) {
 .form__group {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap;
+}
+
+.form__group > * {
+    flex-grow: 1;
 }
 
 .form__control h3 span {

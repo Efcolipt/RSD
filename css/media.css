@@ -173,6 +173,14 @@
     .club-find__list {
         grid-template-columns: 1fr;
     }
+    
+    .consult__list-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form__control textarea {
+        min-width: 100%;
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -183,6 +191,10 @@
 
     .clubs__list {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .consult__list-items {
+        grid-template-columns: 1fr;
     }
 
     .article__social div:last-child svg {
@@ -381,6 +393,14 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .consult__content {
+        grid-template-columns: 1fr;
+    }
+
+    .consult__list-items {
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 @media only screen and (max-width: 525px) {
@@ -484,6 +504,14 @@
     .important-info__item h3 {
         min-width: 186px;
         gap: 10px;
+    }
+    
+    .consult__list-items {
+        grid-template-columns: 1fr;
+    }
+
+    input[type="text"] {
+        width: 100%;
     }
     
     .club-slider__content {
