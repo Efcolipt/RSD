@@ -341,6 +341,14 @@
         flex-direction: column;
         align-items: baseline;
     }
+    
+    .club-slider__content {
+        gap: 30px;
+    }
+    
+    .club-slider .image, .club-gallery .image {
+        height: 280px;
+    }
 }
 
 @media only screen and (max-width: 596px) {
@@ -472,6 +480,14 @@
     .important-info__item h3 {
         min-width: 186px;
         gap: 10px;
+    }
+    
+    .club-slider__content {
+        flex-direction: column-reverse;
+    }
+
+    #map {
+        height: 350px;
     }
     
     .club-find__list {
