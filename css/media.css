@@ -385,6 +385,10 @@
         left: 80px;
     }
 
+    .us-activities-other__content {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .local-place__content {
         grid-template-columns: 1fr;
     }
@@ -654,6 +658,11 @@
     }
 
     .local-place__list {
+        grid-template-columns: 1fr;
+    }
+
+    
+    .us-activities-other__content {
         grid-template-columns: 1fr;
     }
 }
