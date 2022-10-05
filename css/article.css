@@ -80,7 +80,7 @@
 }
 
 .article__line-actions{
-    min-width: 150px;
+    width: 100%;
     height: 1px;
     background-color: var(--color-line);
 }
@@ -89,6 +89,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:35px;
 }
 
 .article__like button {
@@ -124,7 +125,12 @@
 .article__social div:last-child {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
+}
+
+.article__social div:last-child svg {
+    width: 45px;
+    height: 45px;
 }
 
 .article__published {
@@ -133,6 +139,10 @@
     align-items: center;
     font-size: 1.1rem;
     color: var(--color-line);
+}
+
+.article__published time {
+    white-space: nowrap;
 }
 
 .article__published div {
