@@ -181,6 +181,10 @@
         display: none;
     }
 
+    .clubs__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .article__social div:last-child svg {
         width: 40px;
         height: 40px;
@@ -574,4 +578,10 @@
         grid-template-columns: 1fr;
     }
     
+}
+
+@media only screen and (max-width: 430px) {
+    .clubs__list {
+        grid-template-columns: 1fr;
+    }
 }
