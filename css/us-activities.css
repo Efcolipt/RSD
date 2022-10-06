@@ -2,6 +2,10 @@
     margin-bottom: 30px;
 }
 
+.us-activities__content p {
+    max-width: 815px;
+}
+
 .us-activities-other__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

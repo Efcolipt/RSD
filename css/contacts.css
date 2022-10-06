@@ -44,6 +44,10 @@
     margin-bottom: 20px;
 }
 
+.contacts-about__contact > div svg {
+    margin-right: 10px;
+}
+
 .contacts-about__contact div:last-child {
     margin-bottom: 0;
 }

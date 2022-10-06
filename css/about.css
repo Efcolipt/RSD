@@ -37,7 +37,7 @@ html {
 }
 
 .history-us__line {
-    grid-row: 1 / 7;
+    grid-row: span 6;
 }
 
 .history-us__line img {

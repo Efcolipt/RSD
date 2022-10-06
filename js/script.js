@@ -3,9 +3,9 @@
 [...document.getElementsByClassName('select')].forEach(select => {
     select.addEventListener('click', function (_) {
         this.classList.toggle('select--active')
-    })
+    });
 
-    Array.from(select.getElementsByClassName('select__item')).forEach(selectItem => {
+    [...select.getElementsByClassName('select__item')].forEach(selectItem => {
         selectItem.addEventListener('click', function (e) {
             e.stopPropagation()
 
@@ -18,7 +18,7 @@
 
             select.classList.toggle('select--active')
         })
-    })
+    });
 
 });
 
@@ -33,15 +33,15 @@
 });
 
 [...document.getElementsByClassName('header-main__mobile-menu__item')].forEach(element => {
-    element.addEventListener('click', function () {
+    element.addEventListener('click', function (e) {
         this.classList.toggle('header-main__mobile-menu__item--active')
     })
-})
+});
 
 
-document.getElementById('mobile-burger').addEventListener('click', function () {
-    document.getElementById('mobile-menu').classList.toggle('header-main__mobile-menu--active')
-})
+// document.getElementById('mobile-burger').addEventListener('click', function () {
+//     document.getElementById('mobile-menu').classList.toggle('header-main__mobile-menu--active')
+// });
 
 
 

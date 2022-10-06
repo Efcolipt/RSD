@@ -153,6 +153,7 @@
 .useful-sites{
     background-color: var(--color-white-l2);
     padding: 90px 0;
+    margin-bottom: 0;
 }
 
 .useful-sites__link{
@@ -299,7 +300,7 @@
     font-weight: bold;
 }
 
-.reference-book__services a svg{
+.reference-book__services a:not(.reference-book__services--stroke) svg{
     fill: var(--color-accent);
 }
 

@@ -89,7 +89,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:35px;
+    gap:20px;
+    margin-top: 55px;
 }
 
 .article__like button {
@@ -125,7 +126,7 @@
 .article__social div:last-child {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
 }
 
 .article__social div:last-child svg {
