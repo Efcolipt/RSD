@@ -39,9 +39,9 @@
 });
 
 
-// document.getElementById('mobile-burger').addEventListener('click', function () {
-//     document.getElementById('mobile-menu').classList.toggle('header-main__mobile-menu--active')
-// });
+document.getElementById('mobile-burger').addEventListener('click', function () {
+    document.getElementById('mobile-menu').classList.toggle('header-main__mobile-menu--active')
+});
 
 
 
@@ -50,3 +50,9 @@ new Modal({
 });
 
 
+
+$('.slider__items').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+});

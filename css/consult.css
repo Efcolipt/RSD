@@ -4,6 +4,10 @@
     grid-gap: 25px;
 }
 
+.consult-form__content .btn-default {
+    padding: 0 54.5px;
+}
+
 .cosult__filters  {
     display: flex;
     align-content: flex-start;

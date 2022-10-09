@@ -185,10 +185,10 @@
 }
 
 @media only screen and (max-width: 760px){
-    :root {
-        --fz-size: 0.80;
-    }
 
+    .about-us-in-media__list .card-article .image {
+        height: 220px;
+    }
 
     .footer-info-list__nav {
         display: none;
@@ -434,7 +434,7 @@
 @media only screen and (max-width: 525px) {
 
     :root {
-        --fz-size: 0.70;
+        --fz-size: 0.9;
     }
 
     .contacts-about__contact svg {
@@ -531,12 +531,40 @@
         width: 100%;
     }
 
+    .contacts-helper__item h3 {
+        position: static;
+        left: unset;
+        bottom: unset;
+        transform: unset;
+    }
+
+    .contacts-helper__item {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contacts-about__about {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .contacts-about__about .image {
+        width: 100%;
+        height: 320px;
+    }
+
 }
 
 @media only screen and (max-width: 490px) {
     .important-info__item h3 {
         min-width: 186px;
         gap: 10px;
+    }
+
+    .local-news-channel__headline {
+        flex-direction: column;
+        align-items: baseline;
+        gap:30px;
     }
 
     .contacts-helper__list {
@@ -553,10 +581,6 @@
     
     .club-slider__content {
         flex-direction: column-reverse;
-    }
-
-    #map {
-        height: 350px;
     }
     
     .club-find__list {

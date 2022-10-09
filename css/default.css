@@ -222,9 +222,10 @@ section {
     cursor: pointer;
 }
 
-.header-main__mobile-menu__link svg {
+.header-main__mobile-menu__item svg {
     margin-left: 10px;
 }
+
 
 .header-main__mobile-menu__list {
     display: none;
@@ -536,7 +537,7 @@ section {
     align-items: center;
 }
 
-.breadcrumb li a {
+.breadcrumb li a, .breadcrumb li span {
     color: var(--color-dark-black);
     font-size: .9rem;
 }

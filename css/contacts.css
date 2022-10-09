@@ -18,6 +18,9 @@
     transform: translateX(-50%);
     text-align: center;
     bottom: 50px;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
 }
 
 .contacts-about__about {
