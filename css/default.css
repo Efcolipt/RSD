@@ -1,15 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap');
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url("../fonts/OpenSans_Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("../fonts/OpenSans_Regular.TTF") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Open Sans Semibold";
+    src: url("../fonts/OpenSans_SemiBold.ttf") format("truetype");
+    font-weight: normal;
+}
+
 :root {
     --fz-size: 1;
     --default-fz: calc(16px * var(--fz-size));
     --font-letter-spacing: 0px;
     --font-line-height: 1;
-
-    --font-OpenSans: 'Open Sans';
-    --font-serif: sans-serif;
-
-    --headline-font: var(--font-OpenSans);
-    --text-font: var(--font-OpenSans);
 
     --text-bold: 600;
     --text-normal: 400;
@@ -71,9 +82,30 @@ html {
 }
 
 body {
-    font-family: var(--font-OpenSans);
+    font-family: 'Open Sans Regular';
 }
 
+h1,h2 {
+    font-family: 'Open Sans Bold';
+}
+
+h1 > *,h2 > * {
+    font-family: 'Open Sans Bold' !important;
+}
+
+
+h3,h4,h5,h6 {
+    font-family: 'Open Sans Semibold';
+}
+
+h3 > *, h4 > *, h5 > *, h6 > {
+    font-family: 'Open Sans Semibold' !important;
+}
+
+
+b {
+    font-family: 'Open Sans Bold';
+}
 
 input[type="text"] {
     background: var(--color-white);

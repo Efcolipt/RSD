@@ -358,6 +358,10 @@
         grid-template-columns: 195px 1fr;
     }
 
+    .all-news-sliders__content-cards .card-article {
+        min-height: 100%;
+    }
+
     .goverment-docs__headline {
         flex-direction: column;
         margin-bottom: 25px;
