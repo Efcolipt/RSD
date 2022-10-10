@@ -847,6 +847,7 @@ section {
 
 .all-news-sliders__content-cards .card-article  {
     border-color: var(--color-dark-gray);
+    min-height: 450px;
 }
 
 .local-news-channel__headline {

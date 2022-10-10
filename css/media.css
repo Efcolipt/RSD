@@ -35,6 +35,20 @@
         row-gap: 25px;
     }
 
+    .about-directors__content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-directors__item:nth-child(3n):after {
+        content: "";
+        width: 0;
+    }
+
+    .about-directors__item:nth-child(4n):after {
+        content: "";
+        width: calc(100% + 50px);
+    }
+
     .content-filter__content-videos > .card-article {
         max-width: 100%;
     }
@@ -161,6 +175,41 @@
 
     .history-us__info {
         column-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .history-us__content {
+        grid-template-columns: 0 1fr;
+        column-gap: 30px;
+        padding: 0 20px;
+        row-gap: 25px;
+    }
+
+    .history-us__ellipse {
+        position: absolute;
+        left: -43px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .about-videos__list {
+        grid-template-columns: 1fr;
+    }
+
+    .about-videos__item img:first-child {
+        max-width: 100%;
+    }
+
+    .history-us__info:last-child::after {
+        width: 3px;
+        height: 30px;
+        top: -25px;
+        left: -30px;
+    }
+
+    .history-us__year {
+        padding-left: 0;
+        margin-bottom: 15px;
     }
 
     .place__info .image {
@@ -193,6 +242,21 @@
     .footer-info-list__nav {
         display: none;
     }
+
+    .about-directors__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-directors__item:nth-child(3n):after {
+        content: "";
+        width: calc(100% + 50px);
+    }
+
+    .about-directors__item:nth-child(2n):after {
+        content: "";
+        width: 0;
+    }
+
 
     .local-place__list {
         grid-template-columns: 1fr;
@@ -665,6 +729,24 @@
 
     .article-topic__list {
         grid-template-columns: 1fr;
+    }
+
+    .about-directors__content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-directors__item:nth-child(2n):after {
+        content: "";
+        width: calc(100% + 50px);
+    }
+
+    .about-directors__item:nth-child(n):after {
+        content: "";
+        width: 0;
+    }
+
+    .about-directors__ellipse {
+        display: none;
     }
     
 }
