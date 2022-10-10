@@ -439,7 +439,7 @@
 
 @media only screen and (max-width: 596px) {
     .main-slider .slider__item > div {
-        left: 80px;
+        left:30px;
     }
 
     .us-activities-other__content {
