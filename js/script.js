@@ -45,14 +45,26 @@ document.getElementById('mobile-burger').addEventListener('click', function () {
 
 
 
-new Modal({
-    linkAttributeName: 'data-modal', 
-});
+// new Modal({
+//     linkAttributeName: 'data-modal', 
+// });
 
 
 
-$('.slider__items').slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
-});
+[...$('.slider')].forEach(element => {
+    const count = element.getAttribute('data-count')
+    const slider = element.getAttribute('data-slider')
+    const dots = element.getAttribute('data-dots')
+
+    $(`[data-slider="${slider}"]  .slider__items`).slick({
+        infinite: true,
+        slidesToShow: +count,
+        slidesToScroll: 1,
+        prevArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="prev"]`),
+        nextArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="next"]`),
+        mobileFirst: true,
+        dots: dots === 'y',
+
+    });
+    
+})

@@ -40,7 +40,7 @@
 
 .main-slider .slider__control {
     position: absolute;
-    bottom: 69px;
+    bottom: 39px;
     cursor: pointer;
     z-index: 2;
 }
@@ -99,15 +99,6 @@
 .important-info__item h3 > span {
     font-size: 1.75rem;
     font-weight: bold;
-}
-
-.useful-info__content .slider__item{
-    flex: 0 0 50%;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px;
 }
 
 .useful-info__item {
@@ -187,17 +178,6 @@
     grid-template-columns: repeat(3, minmax(auto, 335px));
     grid-gap: 25px;
     margin-top: 45px;
-}
-
-.goverment-docs__content .slider__item{
-    flex: 0 0 33.3333333333%;
-    max-width: 33.3333333333%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    padding: 5px;
-    will-change: transform;
 }
 
 .goverment-docs__item {

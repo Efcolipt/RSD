@@ -57,16 +57,6 @@
         grid-template-columns: repeat(2, minmax(auto, 270px));
     }
 
-    .local-news-channel__content .slider__item {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .goverment-docs__content .slider__item {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
     .useful-sites__content {
         grid-template-columns: repeat(2, minmax(auto, 1fr));
     }
@@ -552,11 +542,6 @@
         display: none;
     }
 
-    .local-news-channel__content .slider__item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }   
-
     .local-news-channel__content .card-article {
         max-width: 100%;
     }
@@ -575,11 +560,6 @@
 
     .useful-info__item > img {
         height: 255px;
-    }
-
-    .goverment-docs__content .slider__item {
-        flex: 0 0 100%;
-        max-width: 100%;
     }
 
     .about-us-in-media__list {
@@ -687,11 +667,6 @@
     .reference-book__services a {
         margin-bottom: 20px;
         height: 70px;
-    }
-
-    .useful-info__content .slider__item {
-        max-width: 100%;
-        flex: 0 0 100%;
     }
 
     .important-info__item {
