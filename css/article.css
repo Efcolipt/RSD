@@ -9,6 +9,10 @@ display: flex;
     overflow: hidden;
 }
 
+.article__main .image {
+    min-height: 400px;
+}
+
 .article__main .slider__indicators {
     position: absolute;
     bottom: 25px;

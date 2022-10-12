@@ -987,6 +987,8 @@ section {
 .local-news-channel__headline .headline {
     margin-right: 80px;
     margin-bottom: 0;
+    display: flex;
+    gap: 20px;
 }
 
 .local-news-channel__constituencies {
