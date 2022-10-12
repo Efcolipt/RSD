@@ -51,7 +51,34 @@ $(document).ready(function(){
             nextArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="next"]`),
             mobileFirst: true,
             dots: dots === 'y',
+            autoplay: true
         });
+    })
+
+    $('.content-filter__content-other__download .btn-default').click(function () {
+        $.ajax({
+            url: '/index.php',
+            method: 'get',
+            dataType: 'json',
+            // data: {text: 'Текст'},
+            success: function(jsonData){
+                const parent = $(this).parents('.content-filter__content').find('.content-filter__content-other')
+                const data = JSON.parse(jsonData)
+                const structure = `
+                    <article class="card-article">
+                        <img class="image" src="${data.image}" alt="">
+                        <h3>${data.headline}</h3>
+                        <div class="card-article__info">
+                            <time datetime="${data.date}">
+                                ${data.date}
+                            </time>
+                        </div>
+                    </article>
+                `
+                parent.append(structure)
+            }
+        });
+
     })
 });
       
