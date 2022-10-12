@@ -1,11 +1,12 @@
 .article__content {
-    display: grid;
-    grid-template-columns: 1fr 1px 300px;
-    column-gap: 40px;
+display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.article__main .slider__item {
-    padding: 0 2px;
+.article__main {
+    max-width: 800px;
+    overflow: hidden;
 }
 
 .article__main .slider__indicators {
@@ -26,7 +27,7 @@
 
 .article__main .slider__control {
     position: absolute;
-    bottom: 25px;
+    bottom: 70px;
 }
 
 .article__main .slider__control[data-slide="prev"] {
@@ -35,10 +36,6 @@
 
 .article__main .slider__control[data-slide="next"] {
     right: 25px;
-}
-
-.article__main .slider__item img {
-    width: 100%;
 }
 
 .article__other-articles .card-article {
@@ -52,7 +49,7 @@
 
 .article__line {
     width: 1px;
-    height: 100%;
+    flex: 1 0 auto;
     background-color: var(--color-line);
 }
 
