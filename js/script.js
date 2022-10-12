@@ -55,10 +55,10 @@ $(document).ready(function(){
         });
     })
 
-    $('.content-filter__content-other__download .btn-default').click(function () {
+    function download(url, method) {
         $.ajax({
-            url: '/index.php',
-            method: 'get',
+            url,
+            method,
             dataType: 'json',
             // data: {text: 'Текст'},
             success: function(jsonData){
@@ -77,9 +77,8 @@ $(document).ready(function(){
                 `
                 parent.append(structure)
             }
-        });
-
-    })
+        }); 
+    }
 });
       
 
