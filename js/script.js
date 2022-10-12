@@ -39,18 +39,18 @@ $(document).ready(function(){
         });
 
     $('.slider').each(function() {
-        const count = $(this).attr('data-count')
+        const count = $(this).attr('data-count') ? +$(this).attr('data-count') : 1
         const slider = $(this).attr('data-slider')
         const dots = $(this).attr('data-dots')
-        
+         
         $(`[data-slider="${slider}"]  .slider__items`).slick({
             infinite: true,
-            slidesToShow: count ? +count : 1,
+            slidesToShow: count,
             slidesToScroll: 1,
             prevArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="prev"]`),
             nextArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="next"]`),
             mobileFirst: true,
-            dots: dots === 'y',
+            dots: dots === 'y' && count > 1,
             autoplay: true
         });
     })
