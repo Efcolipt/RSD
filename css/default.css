@@ -632,13 +632,13 @@ section {
     font-weight: 600;
 }
 
-.headline__link>a>svg:first-child {
+.headline a > svg:first-child {
     width: 38px;
     height: 38px;
     display: block;
 }
 
-.headline__link > a > svg:last-child {
+.headline a > svg:last-child {
     width: 18px;
     height: 18px;
 }
