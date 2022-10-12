@@ -3,61 +3,45 @@
 $(document).ready(function(){
 
 
+    $('.select').click(function() {
+        $(this).toggleClass('select--active')
+    })
 
-    [...document.getElementsByClassName('select')].forEach(select => {
-        select.addEventListener('click', function (_) {
-            this.classList.toggle('select--active')
-        });
+    $('.select .select__item').click(function (e) {
+        e.stopPropagation()
+
+        const val = $(this).attr('data-select-value')
+        const select = $(this).parents('.select')
+        const headlineDefault = select.find('.select__item[data-select-value="default"]').text()
+
+        select.find('.select__headline span').text(val === 'default' ?  headlineDefault : val)
+        select.attr('data-select-selected', val)
+        select.toggleClass('select--active')
+    })
+
     
-        [...select.getElementsByClassName('select__item')].forEach(selectItem => {
-            selectItem.addEventListener('click', function (e) {
-                e.stopPropagation()
+
+    $('.header-main__nav-pages__nav-item').hover(function() {
+        $(this).toggleClass('header-main__nav-pages__nav-item--submenu-active')
+    })
+
+    $('.header-main__mobile-menu__item').click(function() {
+        $(this).toggleClass('header-main__mobile-menu__item--active')
+    })
     
-                const headline = select.querySelector('.select__headline > span')
-                const headlineDefault = select.querySelector('.select__item[data-select-value="default"]').textContent
-                const val = this.getAttribute('data-select-value')
-              
-                select.setAttribute('data-select-selected', val)
-                headline.textContent = val === 'default' ?  headlineDefault : val
-    
-                select.classList.toggle('select--active')
-            })
-        });
-    
+    $('#mobile-burger').click(function() {
+        $('#mobile-menu').toggleClass('header-main__mobile-menu--active')
     });
-    
-    
-    [...document.getElementsByClassName('header-main__nav-pages__nav-item')].forEach(element => {
-        element.addEventListener("mouseover", function () {
-            this.classList.toggle('header-main__nav-pages__nav-item--submenu-active')
-        }, false);
-        element.addEventListener("mouseout", function () {
-            this.classList.toggle('header-main__nav-pages__nav-item--submenu-active')
-        }, false);
-    });
-    
-    [...document.getElementsByClassName('header-main__mobile-menu__item')].forEach(element => {
-        element.addEventListener('click', function (e) {
-            this.classList.toggle('header-main__mobile-menu__item--active')
-        })
-    });
-    
-    
-    document.getElementById('mobile-burger').addEventListener('click', function () {
-        document.getElementById('mobile-menu').classList.toggle('header-main__mobile-menu--active')
-    });
-    
     
     if($('[data-modal]').length > 0) 
         new Modal({
             linkAttributeName: 'data-modal', 
         });
 
-    
-    [...$('.slider')].forEach(element => {
-        const count = element.getAttribute('data-count')
-        const slider = element.getAttribute('data-slider')
-        const dots = element.getAttribute('data-dots')
+    $('.slider').each(function() {
+        const count = $(this).attr('data-count')
+        const slider = $(this).attr('data-slider')
+        const dots = $(this).attr('data-dots')
         
         $(`[data-slider="${slider}"]  .slider__items`).slick({
             infinite: true,
@@ -67,9 +51,7 @@ $(document).ready(function(){
             nextArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="next"]`),
             mobileFirst: true,
             dots: dots === 'y',
-    
         });
-        
     })
 });
       
