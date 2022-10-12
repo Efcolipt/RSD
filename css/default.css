@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: "Open Sans Regular";
-    src: url("../fonts/OpenSans_Regular.TTF") format("truetype");
+    src: url("../fonts/OpenSans_Regular.ttf") format("truetype");
     font-weight: 600;
 }
 
