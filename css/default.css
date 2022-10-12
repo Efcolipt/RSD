@@ -911,9 +911,12 @@ section {
 
 .content-filter__content-videos {
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 500px));
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 55px;
+}
+
+.content-filter__content-videos a:last-child {
+    justify-self: right;
 }
 
 .content-filter__content-videos .card-article {

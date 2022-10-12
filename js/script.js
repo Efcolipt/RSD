@@ -76,6 +76,9 @@ $(document).ready(function(){
                     </article>
                 `
                 parent.append(structure)
+
+                if($('.content-filter__content-other article').length > 0)
+                    $('.content-filter__content-other__download').css('display', 'none')
             }
         }); 
     }
