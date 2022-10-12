@@ -30,6 +30,14 @@
         gap: 20px;
     }
 
+    .content-filter__content-videos .card-article {
+        width: 100%;
+    }
+
+    .content-filter__content-videos a:last-child {
+        justify-self: unset;
+    }
+
     .reference-book__social-links {
         grid-template-columns: repeat(4, minmax(max-content, auto));
     }
