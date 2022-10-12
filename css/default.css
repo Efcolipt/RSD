@@ -621,7 +621,6 @@ section {
     font-size: 1.4rem;
 }
 
-
 .headline__link>a {
     display: flex;
     align-items: center;
@@ -634,9 +633,14 @@ section {
 }
 
 .headline__link>a>svg:first-child {
-    width: 28px;
-    height: 28px;
+    width: 38px;
+    height: 38px;
     display: block;
+}
+
+.headline__link > a > svg:last-child {
+    width: 18px;
+    height: 18px;
 }
 
 .headline__main span {

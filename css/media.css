@@ -134,16 +134,6 @@
         margin-bottom: 18px;
     }
 
-    .headline__link > a > svg:first-child {
-        width: 22px;
-        height: 22px;
-    }
-
-    .headline__link > a > svg:last-child  {
-        width: 9px;
-        height: 12px;
-    }
-
     .all-news-sliders__content > div {
         gap: 0px;
         padding: 0px;
