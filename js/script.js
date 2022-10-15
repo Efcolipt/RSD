@@ -17,6 +17,26 @@ $(document).ready(function(){
         select.find('.select__headline span').text(val === 'default' ?  headlineDefault : val)
         select.attr('data-select-selected', val)
         select.toggleClass('select--active')
+        $.ajax({
+            dataType: "json",
+            data: {'data': val, 'count': 0},
+            url: $('.btn-default.btn-default--outline-default').attr("value"),
+            method: 'get',
+            cache : false,
+            success: function(data){
+                // interval = setTimeout(callAjax, 1000);
+                $('.about-us-in-media__list').replaceWith($(data.publications));
+                if (data.show_button === false) {
+                    $('.btn-default.btn-default--outline-default').css('display', 'none')
+                }
+                else {
+                    $('.btn-default.btn-default--outline-default').css('display', '')
+                }
+            },
+            error: function (response) {
+                console.log(response.responseJSON.errors)
+            },
+        });
     })
 
     
@@ -42,6 +62,30 @@ $(document).ready(function(){
         const count = $(this).attr('data-count') ? +$(this).attr('data-count') : 1
         const slider = $(this).attr('data-slider')
         const dots = $(this).attr('data-dots')
+        const responsive = []
+
+        if(count === 2) {
+            responsive.push({
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 1,
+                }
+            })
+        } else if (count === 3) {
+            responsive.push({
+                breakpoint: 920,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }, {
+                breakpoint: 525,
+                settings: {
+                    slidesToShow: 1,
+                }
+            })
+        }
+
+        console.log(`[data-slider="${slider}"]`, responsive)
          
         $(`[data-slider="${slider}"]  .slider__items`).slick({
             infinite: true,
@@ -49,9 +93,9 @@ $(document).ready(function(){
             slidesToScroll: 1,
             prevArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="prev"]`),
             nextArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="next"]`),
-            mobileFirst: true,
             dots: dots === 'y' && count > 1,
-            autoplay: true
+            autoplay: true,
+            responsive
         });
     })
 

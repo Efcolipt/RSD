@@ -104,6 +104,17 @@
     outline: none;
 }
 
+#callback-modal .modal__content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 25px;
+}
+
+#callback-modal .modal__content p {
+    margin-top: 20px;
+}
+
 .modal__close:focus{
     outline: 2px dotted #afb3b9;
     outline-offset: 2px;

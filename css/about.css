@@ -192,6 +192,11 @@ html {
     position: relative;
 }
 
+.about-videos__item iframe {
+    height: 400px;
+    border-radius: 10px;
+}
+
 .about-videos__item img:first-child {
     max-width: 695px;
     width: 100%;

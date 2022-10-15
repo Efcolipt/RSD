@@ -14,6 +14,11 @@
     height: 320px;
 }
 
+.about-us-in-media__list .card-article iframe {
+    height: 320px;
+    border-radius: 10px;
+}
+
 .about-us-in-media .btn-default {
     margin: 100px auto 0 auto;
 }

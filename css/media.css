@@ -135,7 +135,6 @@
     }
 
     .all-news-sliders__content > div {
-        gap: 0px;
         padding: 0px;
     }
 
@@ -500,6 +499,10 @@
     .contacts-about__contact svg {
         width: 45px;
         height: 45px;
+    }
+
+    .all-news-sliders__content {
+        gap: 25px;
     }
 
     .all-news-sliders__content > div {
