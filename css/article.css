@@ -45,6 +45,7 @@ display: flex;
 .article__other-articles .card-article {
     padding: 0;
     margin-top: 25px;
+    height: auto;
 }
 
 .article__other-articles .card-article:first-child {
