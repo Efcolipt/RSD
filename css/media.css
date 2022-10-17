@@ -51,16 +51,6 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .about-directors__item:nth-child(3n):after {
-        content: "";
-        width: 0;
-    }
-
-    .about-directors__item:nth-child(4n):after {
-        content: "";
-        width: calc(100% + 50px);
-    }
-
     .content-filter__content-videos > .card-article {
         max-width: 100%;
     }
@@ -237,17 +227,6 @@
     .about-directors__content {
         grid-template-columns: repeat(2, 1fr);
     }
-    
-    .about-directors__item:nth-child(3n):after {
-        content: "";
-        width: calc(100% + 50px);
-    }
-
-    .about-directors__item:nth-child(2n):after {
-        content: "";
-        width: 0;
-    }
-
 
     .local-place__list {
         grid-template-columns: 1fr;
@@ -729,9 +708,6 @@
         width: 0;
     }
 
-    .about-directors__ellipse {
-        display: none;
-    }
     
 }
 

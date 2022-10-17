@@ -132,8 +132,8 @@ section {
 
 .callback {
     position: fixed;
-    right: 100px;
-    bottom: 100px;
+    right: 5%;
+    bottom: 10%;
     background-color: var(--color-accent);
     width: 99px;
     height: 99px;
@@ -306,6 +306,7 @@ section {
     background-color: var(--color-accent);
     color: var(--color-white);
     border-radius: 8px;
+    display: inline-block;
 }
 
 .image {
@@ -701,6 +702,7 @@ section {
 }
 
 .card-article {
+    height: 100%;
     font-weight: bold;
     border-radius: 10px;
     padding: 25px 14px;
