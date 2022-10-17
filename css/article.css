@@ -5,8 +5,8 @@ display: flex;
 }
 
 .article__main {
-    max-width: 800px;
     overflow: hidden;
+    flex: 1 0 800px;
 }
 
 .article__main .image {

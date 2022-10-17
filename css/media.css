@@ -18,10 +18,6 @@
     .article__other-articles {
         display: none;
     }
-
-    .article__content {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media only screen and (max-width: 970px) {
