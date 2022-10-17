@@ -91,7 +91,7 @@ $(document).ready(function(){
             slidesToScroll: 1,
             prevArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="prev"]`),
             nextArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="next"]`),
-            dots: dots === 'y' && $(`[data-slider="${slider}"]  .slider__items`).length > 0,
+            dots: dots === 'y' && $(`[data-slider="${slider}"]  .slider__items`).length > 1,
             autoplay: true,
             responsive
         });

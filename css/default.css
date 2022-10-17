@@ -74,10 +74,6 @@ ol {
     list-style: none;
 }
 
-b {
-    font-weight: bold;
-}
-
 html {
     font-size: var(--default-fz);
 }
@@ -114,6 +110,7 @@ h6> {
 
 b {
     font-family: 'Open Sans Bold';
+    font-weight: bold;
 }
 
 input[type="text"] {
@@ -418,6 +415,10 @@ section {
     margin-bottom: 10px;
 }
 
+.header-main__nav-pages__subnav-item:last-child {
+    margin-bottom: 0;
+}
+
 .header-main__nav-pages__subnav {
     position: absolute;
     display: none;
@@ -504,6 +505,10 @@ section {
 
 .footer-info-list-list__content p {
     margin-bottom: 12px;
+}
+
+.footer-info-list-list__content p b {
+    display: block;
 }
 
 .footer-info-list__actions p {
