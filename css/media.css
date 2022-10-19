@@ -518,10 +518,6 @@
         max-width: 320px;
     }
 
-    .main-slider .slider__control {
-        bottom: 0px;
-    }
-
     .main-slider .slider__control[data-slide="next"] {
         right: 5px;
     }
@@ -751,7 +747,8 @@
     }
 
     .about-directors__item figure img:first-child {
-        width: 110px;
+        width: 100px;
+        height: 125px;
     }
     
     .about-directors__item:nth-child(2n):after {

@@ -40,7 +40,7 @@
 
 .main-slider .slider__control {
     position: absolute;
-    bottom: 15px;
+    bottom: 45px;
     cursor: pointer;
     z-index: 2;
 }
