@@ -222,6 +222,10 @@
         height: 220px;
     }
 
+    .about-videos__item iframe {
+        height: 310px;
+    }
+
     .footer-info-list__nav {
         display: none;
     }
@@ -484,11 +488,16 @@
         grid-template-columns: 1fr 1fr;
     }
 
+
 }
 
 @media only screen and (max-width: 525px) {
     .important-info__list {
         flex-direction: column;
+    }
+
+    .about-videos__item iframe {
+        height: 235px;
     }
 
     .important-info__item {
