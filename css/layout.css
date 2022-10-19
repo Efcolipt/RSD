@@ -35,12 +35,12 @@
 .main-slider .slider__item > div svg {
     position: absolute;
     bottom: -20px;
-    right: 31px;
+    right: 70px;
 }
 
 .main-slider .slider__control {
     position: absolute;
-    bottom: 80px;
+    bottom: 15px;
     cursor: pointer;
     z-index: 2;
 }

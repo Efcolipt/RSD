@@ -85,13 +85,21 @@ $(document).ready(function(){
             })
         }
 
+        switch(slider){
+            case 'useful-info':
+                responsive.push({
+                    breakpoint: 525,
+                    settings: "unslick"
+                })
+        }
+
         $(`[data-slider="${slider}"]  .slider__items`).slick({
             infinite: true,
             slidesToShow: count,
             slidesToScroll: 1,
             prevArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="prev"]`),
             nextArrow: $(`[data-slider="${slider}"]  .slider__control[data-slide="next"]`),
-            dots: dots === 'y' && $(`[data-slider="${slider}"]  .slider__items`).length > 1,
+            dots: dots === 'y' && $(`[data-slider="${slider}"]  .slider__item `).length > 2,
             autoplay: true,
             responsive
         });

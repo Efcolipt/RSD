@@ -341,10 +341,6 @@
         width: 200px;
     }
 
-    .content-filter__content-other {
-        grid-template-columns: 1fr;
-    }
-
     .content-filter__content-other .card-article .image {
         height: 230px;
     }
@@ -407,9 +403,28 @@
     .club-slider .image, .club-gallery .image {
         height: 280px;
     }
+    
+    .btn-default {
+        padding: 0 17.5px;
+    }
+
+    .local-news-channel__headline {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .content-filter__content-other {
+        grid-template-columns: 1fr;
+    }
+
+    .local-news-channel__headline .headline {
+        margin-right: 0px;
+    }
 }
 
 @media only screen and (max-width: 596px) {
+    
     .main-slider .slider__item > div {
         left:30px;
     }
@@ -472,9 +487,48 @@
 }
 
 @media only screen and (max-width: 525px) {
+    .important-info__list {
+        flex-direction: column;
+    }
+
+    .important-info__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .useful-info__content .slider__control-container {
+        display: none;
+    }
+
+    .useful-info__content .slider__items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     :root {
-        --fz-size: 0.9;
+        --fz-size: 0.75;
+    }
+
+    .main-slider .slider__item > div svg {
+        right: 46px;
+    }
+
+    .main-slider .slider__item > div > h1 {
+        max-width: 320px;
+    }
+
+    .main-slider .slider__control {
+        bottom: 0px;
+    }
+
+    .main-slider .slider__control[data-slide="next"] {
+        right: 5px;
+    }
+
+    .main-slider .slider__control[data-slide="prev"] {
+        right: 60px;
+        left: unset;
     }
 
     .contacts-about__contact svg {
@@ -537,7 +591,7 @@
     }
 
     .important-info__list {
-        grid-gap: 10px;
+        grid-gap: 20px;
     }
 
     .important-info__item > img {
@@ -696,8 +750,8 @@
         grid-template-columns: 1fr;
     }
 
-    .about-directors__content {
-        grid-template-columns: 1fr;
+    .about-directors__item figure img:first-child {
+        width: 110px;
     }
     
     .about-directors__item:nth-child(2n):after {
