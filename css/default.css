@@ -521,7 +521,7 @@ section {
     margin-left: 20px;
 }
 
-.footer-info-list__nav {
+.footer-info-list__nav > div:first-child {
     display: flex;
     gap: 125px
 }
