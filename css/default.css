@@ -654,7 +654,7 @@ section {
     font-size: 1.4rem;
 }
 
-.headline__link>a {
+.headline__link {
     display: flex;
     align-items: center;
     gap: 12px;
@@ -665,13 +665,13 @@ section {
     font-weight: 600;
 }
 
-.headline a > svg:first-child {
+.headline object:first-child svg {
     width: 28px;
     height: 28px;
     display: block;
 }
 
-.headline a > svg:last-child {
+.headline object:last-child svg:last-child {
     width: 14px;
     height: 14px;
 }
