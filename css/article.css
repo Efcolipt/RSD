@@ -42,13 +42,18 @@ display: flex;
     right: 25px;
 }
 
-.article__other-articles .card-article {
+.article__other-articles > a {
     padding: 0;
     margin-top: 25px;
     height: auto;
 }
 
-.article__other-articles .card-article:first-child {
+.article__other-articles .card-article {
+    padding: 0;
+    height: auto;
+}
+
+.article__other-articles a:first-child {
     margin-top: 0;
 }
 
