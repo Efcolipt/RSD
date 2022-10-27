@@ -202,6 +202,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .consult__item .image {
+        height: 220px;
+    }
+
     .form__control textarea {
         min-width: 100%;
     }

@@ -17,13 +17,13 @@
 
 .consult__list-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 335px);
     grid-gap: 70px 25px;
     margin-bottom: 90px;
 }
 
 .consult__item .image {
-    height: 240px;
+    height: 260px;
 }
 
 .consult__item h3 {

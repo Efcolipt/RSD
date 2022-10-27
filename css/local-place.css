@@ -1,7 +1,7 @@
 .local-place__content{
     display: grid;
-    grid-template-columns: 300px 1fr;
-    grid-gap: 25px;
+    grid-template-columns: 275px 1fr;
+    grid-gap: 15px;
 }
 
 .local-place__filters-hash {
@@ -139,7 +139,7 @@
 }
 
 .local-place__item .image {
-    height: 220px;
+    height: 260px;
 }
 
 .local-place__item h3 {

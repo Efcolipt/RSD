@@ -91,3 +91,11 @@
 .club-slider .slider {
     margin-bottom: 40px;
 }
+
+.club-gallery .slick-list{
+    overflow: unset;
+}
+
+body {
+    overflow-x: hidden;
+}

@@ -124,6 +124,10 @@
     padding: 25px 60px;
 }
 
+.modal__content {
+    margin-top: 40px;
+}
+
 .modal__body p {
     margin-bottom: 25px;
     border-radius: 8px;
