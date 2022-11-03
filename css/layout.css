@@ -298,3 +298,144 @@
     margin-bottom: 0;
 }
 
+.navigator {
+    position: relative;
+}
+
+.navigator__sidebar{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #fff;
+    z-index: 5;
+    width: 270px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.navigator__search {
+    padding: 20px 15px 0;
+}
+
+.navigator__input {
+    margin-bottom: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+    box-shadow: 0 4px 15px rgb(0 0 0 / 10%);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.navigator__input input {
+    padding: 17px 80px 18px 15px;
+    font-size: 16px;
+    line-height: 100%;
+    color: #231f20;
+    outline: 0;
+    border: 0;
+    width: 100%;
+    -webkit-appearance: none;
+}
+
+.navigator__input input:focus::placeholder {
+    color: transparent;
+}
+
+.navigator-section {
+    background-color: var(--color-white-l2);
+    padding: 90px 0;
+}
+
+.navigator-section #map {
+    height: 650px;
+    width: 100%;  
+    border-radius: 0px 10px 10px 0px;
+}
+
+.navigator-section #map * {
+    border-radius: 10px;
+}
+
+.navigator__input svg {
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    position: absolute;
+    overflow: hidden;
+    height: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.navigator__list {
+    height: 100%;
+    overflow-y: auto;
+}
+
+.navigator__item {
+    text-decoration: none !important;
+    cursor: pointer !important;
+    padding: 18px 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+
+.navigator__item::after {
+    bottom: 0;
+}
+
+.navigator__item:nth-child(2n + 1) {
+    color: var(--color-accent);
+    fill: var(--color-accent);
+}
+
+.navigator__item:nth-child(2n) {
+    color: var(--color-hashtag);
+    fill: var(--color-hashtag);
+}
+
+.navigator__item::after {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    height: 1px;
+    background: #d5dae0;
+    content: '';
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.navigator__item:hover::before,.navigator__item:hover::after {
+    left: 0;
+    right: 0;
+}
+
+.navigator__item:hover svg {
+    fill: var(--color-accent);
+}
+
+.navigator__item-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.navigator__item-text h4 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.navigator__item-next {
+    margin-left: auto;
+}
+
+.navigator__item-next svg {
+    width: 24px;
+    height: 24px;
+    fill: #e1e3e7;
+    transition: .3s ease;
+}
