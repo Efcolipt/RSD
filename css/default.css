@@ -1,19 +1,25 @@
 @font-face {
-    font-family: "Open Sans Bold";
-    src: url("../fonts/OpenSans_Bold.ttf") format("truetype");
+    font-family: "Roboto Bold";
+    src: url("../fonts/Roboto-Bold.ttf") format("truetype");
     font-weight: bold;
 }
 
 @font-face {
-    font-family: "Open Sans Regular";
-    src: url("../fonts/OpenSans_Regular.ttf") format("truetype");
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto-Regular.ttf") format("truetype");
     font-weight: 600;
 }
 
 @font-face {
-    font-family: "Open Sans Semibold";
-    src: url("../fonts/OpenSans_SemiBold.ttf") format("truetype");
-    font-weight: normal;
+    font-family: "Roboto Semibold";
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: 300;
 }
 
 :root {
@@ -81,17 +87,17 @@ html {
 }
 
 body {
-    font-family: 'Open Sans Regular';
+    font-family: 'Roboto Regular';
 }
 
 h1,
 h2 {
-    font-family: 'Open Sans Bold';
+    font-family: 'Roboto Bold';
 }
 
 h1>*,
 h2>* {
-    font-family: 'Open Sans Bold' !important;
+    font-family: 'Roboto Bold' !important;
 }
 
 
@@ -99,19 +105,19 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans Semibold';
+    font-family: 'Roboto Semibold';
 }
 
 h3>*,
 h4>*,
 h5>*,
 h6> {
-    font-family: 'Open Sans Semibold' !important;
+    font-family: 'Roboto Semibold' !important;
 }
 
 
 b {
-    font-family: 'Open Sans Bold';
+    font-family: 'Roboto Bold';
     font-weight: bold;
 }
 
@@ -333,22 +339,65 @@ section {
     background-color: var(--color-accent-blue);
 }
 
-.header-main__actions-btns {
+.header-main__actions .header-main__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main__actions .header-main__actions-brand {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
 }
 
-.header-main__actions button {
-    margin-right: 20px;
+.header-main__actions-brand div:first-child p {
+    color: white;
+    font-size: 0.9rem;
 }
 
-.header-main__actions button span {
-    margin-left: 20px;
+.header-main__actions .header-main__actions-brand form {
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
 }
 
-.header-main__actions button:last-child {
-    margin-right: 0;
+.header-main__actions .header-main__actions-brand form input {
+    width: 185px;
+    height: 34px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.header-main__actions .header-main__actions-brand form button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.header-main__actions-btns ul {
+    display: flex;
+}
+
+.header-main__actions-btns ul li {
+    padding: 14px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.header-main__actions-btns ul li:nth-child(2) {
+    background: #07878E;
+}
+
+.header-main__actions-btns ul li:last-child{
+    margin-left: 30px;
+}
+
+.header-main__actions-btns ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 0.9rem;
 }
 
 .header-main__nav-pages {
@@ -748,6 +797,8 @@ section {
     margin-top: -1.5px;
     margin-left: -1.5px;
     height: 220px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .card-article h3 {
@@ -988,6 +1039,10 @@ section {
 
 .content-filter__content-videos .card-article {
     width: 405px;
+}
+
+.content-filter__content h3, .content-filter__content .card-article__info {
+    padding: 2px;
 }
 
 .content-filter__content-videos .card-article .image {

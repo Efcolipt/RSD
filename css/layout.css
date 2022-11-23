@@ -36,13 +36,13 @@
 .main-slider .slider__item > div svg {
     position: absolute;
     bottom: -20px;
-    right: 70px;
+    right: 20px;
 }
 
 .main-slider .slider__control {
     position: absolute;
     transform: translateX(-50%);
-    left: 50%;reference-book__local-links
+    left: 50%;
     bottom: 25px;
     cursor: pointer;
     z-index: 2;
@@ -57,11 +57,11 @@
 }
 
 .main-slider .slider__control[data-slide="prev"] {
-    left: 47.5%;
+    left: 46.5%;
 }
 
 .main-slider .slider__control[data-slide="next"] {
-    left: 52.5%;
+    left: 53.5%;
 }
 
 .important-info__list {
