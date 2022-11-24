@@ -43,9 +43,13 @@
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
-    bottom: 25px;
+    bottom: 60px;
     cursor: pointer;
     z-index: 2;
+}
+
+.main-slider .slick-dots li {
+    background-color: var(--color-accent-blue);
 }
 
 .main-slider .slider__control svg {
@@ -182,7 +186,7 @@
 
 .useful-sites__content{
     display: grid;
-    grid-template-columns: repeat(3, minmax(auto, 335px));
+    grid-template-columns: repeat(3, minmax(auto, 100%));
     grid-gap: 25px;
     margin-top: 45px;
 }
