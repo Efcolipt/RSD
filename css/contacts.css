@@ -1,6 +1,6 @@
 .contacts-helper__list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 25px;
 }
 
@@ -9,7 +9,14 @@
 }
 
 .contacts-helper__item .image {
-    height: 455px;
+    height: 391px;
+}
+
+.contacts-helper__item--play {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
 }
 
 .contacts-helper__item h3 {

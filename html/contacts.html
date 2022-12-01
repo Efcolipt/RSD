@@ -8,12 +8,33 @@
 
     <link rel="stylesheet" href="../css/default.css">
     <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/modal.css">
     <link rel="stylesheet" href="../css/media.css">
     <title>Article topic</title>
 </head>
 
 <body>
     <div class="wrapper">
+
+        <div class="modal" aria-hidden="true" id="video">
+            <div class="modal__wrap">
+                <div class="modal__window" role="dialog" aria-modal="true">
+                    <div class="modal__close" data-modalclose>
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M17.6418 14.9984L29.4458 3.21194C29.7986 2.85909 29.9968 2.38052 29.9968 1.88151C29.9968 1.3825 29.7986 0.903933 29.4458 0.551081C29.093 0.19823 28.6144 0 28.1155 0C27.6165 0 27.138 0.19823 26.7852 0.551081L15 12.3563L3.21479 0.551081C2.86198 0.19823 2.38346 4.43041e-07 1.88451 4.46759e-07C1.38555 4.50477e-07 0.907034 0.19823 0.55422 0.551081C0.201406 0.903933 0.00319801 1.3825 0.003198 1.88151C0.003198 2.38052 0.201406 2.85909 0.55422 3.21194L12.3582 14.9984L0.55422 26.7849C0.378607 26.9591 0.239219 27.1663 0.144096 27.3947C0.0489742 27.623 0 27.8679 0 28.1153C0 28.3627 0.0489742 28.6076 0.144096 28.8359C0.239219 29.0643 0.378607 29.2715 0.55422 29.4457C0.728399 29.6214 0.935626 29.7608 1.16395 29.8559C1.39227 29.951 1.63716 30 1.88451 30C2.13185 30 2.37674 29.951 2.60507 29.8559C2.83339 29.7608 3.04061 29.6214 3.21479 29.4457L15 17.6405L26.7852 29.4457C26.9594 29.6214 27.1666 29.7608 27.3949 29.8559C27.6233 29.951 27.8682 30 28.1155 30C28.3628 30 28.6077 29.951 28.8361 29.8559C29.0644 29.7608 29.2716 29.6214 29.4458 29.4457C29.6214 29.2715 29.7608 29.0643 29.8559 28.8359C29.951 28.6076 30 28.3627 30 28.1153C30 27.8679 29.951 27.623 29.8559 27.3947C29.7608 27.1663 29.6214 26.9591 29.4458 26.7849L17.6418 14.9984Z"
+                                fill="black" />
+                        </svg>
+
+                    </div>
+                    <div class="modal__body">
+                        <iframe width="100%" height="250" src="https://www.youtube.com/embed/Nq3x1AkwgpY" title="Charlie Puth - That's Hilarious [Official Video]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <header class="header-main">
             <div class="header-main__actions">
                 <div class="container">
@@ -227,8 +248,13 @@
                 <div class="container">
                     <div class="contacts-helper__content">
                         <div class="contacts-helper__list">
-                            <a class="contacts-helper__item">
+                            <a data-modal="#video"  class="contacts-helper__item">
                                 <img class="image" src="../img/bg-smal.png" alt="">
+                                <svg class="contacts-helper__item--play" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="30" cy="30" r="30" fill="#E01B4F"/>
+                                    <path d="M44 26.5359C46.6667 28.0755 46.6667 31.9245 44 33.4641L26 43.8564C23.3333 45.396 20 43.4715 20 40.3923L20 19.6077C20 16.5285 23.3333 14.604 26 16.1436L44 26.5359Z" fill="#FAFAFA"/>
+                                    </svg>
+                                    
                                 <h3 class="headline">
                                     <span>
                                         Электронная приемная
@@ -241,8 +267,13 @@
                                     </svg>
                                 </h3>
                             </a>
-                            <a class="contacts-helper__item">
+                            <a data-modal="#video"  class="contacts-helper__item">
                                 <img class="image" src="../img/bg-smal.png" alt="">
+                                <svg class="contacts-helper__item--play" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="30" cy="30" r="30" fill="#E01B4F"/>
+                                    <path d="M44 26.5359C46.6667 28.0755 46.6667 31.9245 44 33.4641L26 43.8564C23.3333 45.396 20 43.4715 20 40.3923L20 19.6077C20 16.5285 23.3333 14.604 26 16.1436L44 26.5359Z" fill="#FAFAFA"/>
+                                    </svg>
+                                    
                                 <h3 class="headline">
                                     <span>
                                         Горячая линия
@@ -589,7 +620,11 @@
         </footer>
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
