@@ -36,7 +36,7 @@
 .main-slider .slider__item > div svg {
     position: absolute;
     bottom: -20px;
-    right: 20px;
+    right: 60px;
 }
 
 .main-slider .slider__control {
