@@ -580,6 +580,11 @@ section {
     margin-left: 20px;
 }
 
+.footer-info-list__nav { 
+    display: flex;
+    gap: 25px;
+}
+
 .footer-info-list__nav > div:first-child {
     display: flex;
     gap: 125px
@@ -1078,6 +1083,11 @@ section {
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 550px));
     margin-bottom: 55px;
+}
+
+.content-filter__content-videos > a {
+    display: block;
+    width: 100%;
 }
 
 .content-filter__content-videos a:last-child {
