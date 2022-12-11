@@ -162,6 +162,22 @@ display: flex;
 
 .article__other-articles .card-article img {
     height: 170px;
+    border-radius: 8px;
+}
+
+
+.article__other-articles .card-article h3 {
+    padding: 0;
+}
+
+.article__other-articles .card-article .card-article__info {
+    padding: 0;
+}
+
+.article__other-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .article-news__list {

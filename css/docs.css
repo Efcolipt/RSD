@@ -26,6 +26,27 @@
     border-bottom: 1px solid var(--color-line);
 }
 
+.mb-5 {
+    margin-bottom: 25px;
+}
+
+.select__list {
+    width: auto;
+}
+
+.headline__main {
+    margin-bottom: 0;
+}
+
+.select {
+    border: none;
+    max-width: 220px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
 .gos-docs__item .headline {
     margin-bottom: 15px;
 }

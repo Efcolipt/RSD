@@ -2,6 +2,10 @@
 
 $(document).ready(function(){
 
+    $('.local-news-channel__constituencies > button').click(function() {
+        $(this).parent().toggleClass('local-news-channel__constituencies--open')
+    }) 
+
 
     $('.select').click(function() {
         $(this).toggleClass('select--active')

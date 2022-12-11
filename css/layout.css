@@ -70,12 +70,12 @@
 
 .important-info__list {
     display: flex;
-    gap: 25px;
+    gap: 10px;
 }
 
 .important-info__item {
     position: relative;
-    max-width: 450px;
+    width: 100%;
     display: block;
     cursor: pointer;
 }
