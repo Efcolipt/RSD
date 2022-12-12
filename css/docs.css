@@ -30,7 +30,7 @@
     margin-bottom: 25px;
 }
 
-.select__list {
+.head-doc .select__list {
     width: auto;
 }
 
@@ -38,7 +38,7 @@
     margin-bottom: 0;
 }
 
-.select {
+.head-doc .select {
     border: none;
     max-width: 220px;
     height: auto;
@@ -85,4 +85,11 @@
 
 .docs-download {
     margin: 60px auto 0 auto;
+}
+
+.form__control .select {
+    max-width: 100%;
+    margin-top: 5px;
+    border: 1px solid var(--color-line);
+    height: 55px;
 }

@@ -481,17 +481,18 @@ section {
 .header-main__nav-pages__subnav {
     position: absolute;
     display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: #fff;
-    border-radius: var(--radius);
-    padding: 15px 15px;
     width: 185px;
-    font-size: 0.9rem;
     top: 100%;
     z-index: 80;
     left: 0;
-    border: 1px solid var(--color-line);
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 20px 30px;
+    gap: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
 }
 
 .header-main__nav-pages__nav-link span {
@@ -819,6 +820,10 @@ section {
     margin-top: 20px;
     font-size: 1.225rem;
     padding: 0 25px;
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
 }
 
 .card-article__info {
@@ -1155,6 +1160,7 @@ section {
 .local-news-channel__content .card-article {
     border-color: var(--color-dark-gray);
     max-width: 100%;
+    min-height: 450px;
 }
 
 .local-news-channel__headline {
