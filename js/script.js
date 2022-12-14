@@ -2,6 +2,25 @@
 
 $(document).ready(function(){
 
+    $('.form__docs button').click(function (e) {
+        e.preventDefault();
+        
+        const data = $(this).parents('.form__docs').serialize()
+
+        $.ajax({
+            data,
+            url: '',
+            method: 'get',
+            cache : false,
+            success: function(data){
+                $('.gos-docs__content div:first-child').html(data);
+            },
+            error: function (response) {
+                console.log(response.responseJSON.errors)
+            },
+        });
+    })
+
     $('.local-news-channel__constituencies > button').click(function() {
         $(this).parent().toggleClass('local-news-channel__constituencies--open')
     }) 
@@ -21,7 +40,9 @@ $(document).ready(function(){
         select.find('.select__headline span').text(val === 'default' ?  headlineDefault : val)
         select.attr('data-select-selected', val)
         select.toggleClass('select--active')
-        $.ajax({
+        select.find('input').val(val)
+
+        $('.about-us-in-media').length > 0 && $.ajax({
             dataType: "json",
             data: {'data': val, 'count': 0},
             url: $('.btn-default.btn-default--outline-default').attr("value"),

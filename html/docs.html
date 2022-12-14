@@ -476,11 +476,11 @@
                             </div>
                         </div>
                         <div>
-                            <form action="" class="form__docs">
+                            <form class="form__docs">
                                 <div class="form__control">
                                     <label for="keywords">
                                         <span>Ключевые слова</span>
-                                        <input id="keywords" type="text">
+                                        <input id="keywords" type="text" name="keywords">
                                     </label>
                                 </div>
                                 <div class="form__control">
@@ -491,6 +491,7 @@
                                                 <span>
                                                     Выбрать год
                                                 </span>
+                                                <input type="text" hidden value="default" name="numberDoc">
                                                 <svg width="14" height="9" viewBox="0 0 14 9" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" />
@@ -524,7 +525,7 @@
                                 <div class="form__control">
                                     <label for="type">
                                         <span>Тип документа</span>
-                                        <input id="type" type="text">
+                                        <input id="type" type="text" name="typeDoc">
                                     </label>
                                 </div>
 
@@ -532,12 +533,12 @@
                                     <div>
                                         <label for="date">
                                             <span>Период публикации</span>
-                                            <input id="date" type="date">
+                                            <input id="date" type="date" name="dateFrom">
                                         </label>
                                     </div>
 
                                     <div>
-                                        <input type="date">
+                                        <input type="date" name="dateTo">
                                     </div>
                                 </div>
 
