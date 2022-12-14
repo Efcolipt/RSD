@@ -242,7 +242,7 @@
 .reference-book__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
 }
 
 .reference-book__social h3, .reference-book__local h3{
