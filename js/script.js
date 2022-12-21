@@ -4,6 +4,7 @@ $(document).ready(function(){
 
     $('.local-news-channel__constituencies-items a').click(function () {
         const id = $(this).attr('data-id')
+        $(this).parents('.local-news-channel__constituencies').toggleClass('local-news-channel__constituencies--open')
         console.log(id)
     })
 
