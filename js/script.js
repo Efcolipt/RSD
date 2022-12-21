@@ -2,6 +2,11 @@
 
 $(document).ready(function(){
 
+    $('.local-news-channel__constituencies-items a').click(function () {
+        const id = $(this).attr('data-id')
+        console.log(id)
+    })
+
     $('.form__docs button').click(function (e) {
         e.preventDefault();
         
