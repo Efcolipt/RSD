@@ -1105,7 +1105,7 @@ section {
 }
 
 .content-filter__content-videos .card-article .image {
-    height: 230px;
+    height: 300px;
     border-radius: var(--radius) !important;
 }
 
@@ -1156,7 +1156,7 @@ section {
 .local-news-channel__content .card-article {
     border-color: var(--color-dark-gray);
     max-width: 100%;
-    min-height: 450px;
+    min-height: 560px;
 }
 
 .local-news-channel__headline {
