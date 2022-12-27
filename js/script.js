@@ -212,4 +212,23 @@ $(document).ready(function () {
       },
     });
   }
+
+
+  // FOR NEWS ON INDEX
+
+  // if ($(e.target).closest("#last-news").length) {
+  //     target_ = $("#last-news").attr('value');
+  // }
+  // else {
+  //     target_ = e.target.value;
+  // }
+
+  // $(".content-filter__filters-list button, #last-news").addClass('btn-default--outline-blue').removeClass('btn-default--blue')
+  // $(e.target).addClass('btn-default--blue').removeClass('btn-default--outline-blue')
+
+
+
 });
+
+
+

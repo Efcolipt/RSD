@@ -717,6 +717,10 @@ section {
     border-color: var(--color-accent-blue);
 }
 
+.btn-default--blue svg {
+    fill: #fff;
+}
+
 .btn-default--blue:hover {
     background-color: var(--color-accent-blue);
     color: var(--color-white);
