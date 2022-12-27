@@ -13,6 +13,11 @@ display: flex;
     min-height: 400px;
 }
 
+.article__main .slider__item video{
+    min-height: 400px;
+    max-height: 540px;
+}
+
 .article__main .slider__indicators {
     position: absolute;
     bottom: 25px;

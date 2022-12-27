@@ -214,20 +214,30 @@ $(document).ready(function () {
   }
 
 
-  // FOR NEWS ON INDEX
+  // For news
 
-  // if ($(e.target).closest("#last-news").length) {
-  //     target_ = $("#last-news").attr('value');
-  // }
-  // else {
-  //     target_ = e.target.value;
-  // }
+  $('.content-filter__filters-list > button, #last-news').click(function (e) {
+      e.preventDefault()
+      const val = $(this).attr('value').split(', ')
 
-  // $(".content-filter__filters-list button, #last-news").addClass('btn-default--outline-blue').removeClass('btn-default--blue')
-  // $(e.target).addClass('btn-default--blue').removeClass('btn-default--outline-blue')
+      $(".content-filter__filters-list > button, #last-news").addClass('btn-default--outline-blue').removeClass('btn-default--blue')
+      $(this).addClass('btn-default--blue').removeClass('btn-default--outline-blue')
 
-
-
+      $.ajax({
+        dataType: "json",
+        data: {data: val[1]},
+        url: val[0],
+        method: 'get',
+        success: (data) => {
+            $('.content-filter__content').replaceWith($(data.news));
+            $('.content-filter__headline').replaceWith($(data.channel));
+            count = 9;
+        },
+        error: (response) => {
+            console.log(response.responseJSON.errors)
+        },
+    });
+  })
 });
 
 
