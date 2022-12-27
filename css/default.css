@@ -839,7 +839,7 @@ section {
 }
 
 .slick-slider {
-    margin-left: 12.5px;
+    margin-left: -12.5px;
 }
 
 .card-article .image {
