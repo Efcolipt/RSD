@@ -232,8 +232,9 @@ section {
 }
 
 .slick-dots li.slick-active {
-    background-color: var(--color-accent)!important;
+    background-color: var(--color-accent);
 }
+
 
 .slider {
     position: relative;
@@ -534,7 +535,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    gap: 96px;
 }
 
 .header-main__nav-fast__nav-item {

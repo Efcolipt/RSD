@@ -53,7 +53,7 @@
     gap: 15px;
 }
 
-.main-slider .slick__active {
+.main-slider .slick-dots li.slick-active  {
     background-color: var(--color-accent-blue) !important;
 }
 
