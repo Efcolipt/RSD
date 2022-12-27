@@ -30,6 +30,10 @@
     .gos-docs__content {
         column-gap: 55px;
     }
+    
+    .article-topic__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
@@ -263,6 +267,10 @@
     .local-news-channel__content .card-article {
         min-height: 453px;
     }
+
+    .us-activities-other__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -484,6 +492,10 @@
     .local-news-channel__headline .headline {
         margin-right: 0px;
     }
+    
+    .article-topic__list {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 596px) {
@@ -493,7 +505,7 @@
     }
 
     .us-activities-other__content {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .local-place__content {
@@ -525,10 +537,6 @@
 
     .about-us__img img {
         height: 265px;
-    }
-
-    .article-topic__list {
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .club-find__content {
@@ -812,10 +820,6 @@
         display: none;
     }
 
-    .article-topic__list {
-        grid-template-columns: 1fr;
-    }
-
     .about-directors__item figure img:first-child {
         width: 100px;
         height: 125px;
@@ -843,8 +847,4 @@
         grid-template-columns: 1fr;
     }
 
-    
-    .us-activities-other__content {
-        grid-template-columns: 1fr;
-    }
 }

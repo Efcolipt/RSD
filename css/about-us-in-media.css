@@ -1,7 +1,7 @@
 .about-us-in-media__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px;
+    grid-gap: 60px 25px;
 }
 
 .about-us-in-media__list .card-article {
@@ -11,11 +11,16 @@
 }
 
 .about-us-in-media__list .card-article .image {
-    height: 320px;
+    height: 412px;
+    border-radius: 10px;
+}
+
+.about-us-in-media__list .card-article h3 {
+    margin-top: 30px;
 }
 
 .about-us-in-media__list .card-article iframe {
-    height: 320px;
+    height: 412px;
     border-radius: 10px;
 }
 
@@ -24,11 +29,12 @@
 }
 
 .about-us-in-media__list {
-    margin-top: 50px;
+    margin-top: 53px;
 }
 
 .badge {
     position: absolute;
     bottom: 8%;
     right: 5%;
+    font-size: 1.4rem;
 }

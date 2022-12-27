@@ -100,7 +100,9 @@ $(document).ready(function () {
     const count = $(this).attr("data-count") ? +$(this).attr("data-count") : 1;
     const slider = $(this).attr("data-slider");
     const dots = $(this).attr("data-dots");
+    const badge = $(this).attr("data-badge-count");
     const responsive = [];
+
 
     if (count === 2) {
       responsive.push(
@@ -132,6 +134,27 @@ $(document).ready(function () {
           },
         }
       );
+    }
+
+    if (badge) {
+      $(`[data-slider="${slider}"]`).append(`
+        <div class="badge-counter-img-slider">
+          <span>
+            ${$(`[data-slider="${slider}"]  .slider__items .slider__item`).length}
+          </span>
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_600_2309)">
+            <path d="M15 18.75C17.0711 18.75 18.75 17.0711 18.75 15C18.75 12.9289 17.0711 11.25 15 11.25C12.9289 11.25 11.25 12.9289 11.25 15C11.25 17.0711 12.9289 18.75 15 18.75Z" fill="black"/>
+            <path d="M25 5H21.0375L19.4875 3.3125C19.025 2.8 18.35 2.5 17.65 2.5H12.35C11.65 2.5 10.975 2.8 10.5 3.3125L8.9625 5H5C3.625 5 2.5 6.125 2.5 7.5V22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM15 21.25C11.55 21.25 8.75 18.45 8.75 15C8.75 11.55 11.55 8.75 15 8.75C18.45 8.75 21.25 11.55 21.25 15C21.25 18.45 18.45 21.25 15 21.25Z" fill="black"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_600_2309">
+            <rect width="30" height="30" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </div>
+      `)
     }
 
     switch (slider) {

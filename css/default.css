@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @font-face {
     font-family: "Roboto Bold";
     src: url("../fonts/Roboto-Bold.ttf") format("truetype");
@@ -180,6 +181,26 @@ section {
     justify-content: center;
     gap: 10px;
 
+}
+
+.badge-counter-img-slider {
+    position: absolute;
+    left: 40px;
+    top:40px;
+    background: #FAFAFA;
+    border-radius: 10px;
+    padding: 9px 13px;
+    display: flex;
+    gap: 9.5px;
+    line-height: 30px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.badge-counter-img-slider span {
+    font-size: 1.4rem;
+    font-family: 'Open Sans';
+    font-weight: 600;
 }
 
 
@@ -596,10 +617,10 @@ section {
 }
 
 .footer-found-error {
-    margin-right: 126px;
     margin-top: 60px;
     text-align: right;
-    color: var(--color-dark-gray)
+    color: var(--color-dark-gray);
+    text-align: center;
 }
 
 .footer-found-error b {
@@ -749,8 +770,12 @@ section {
     vertical-align: middle;
 }
 
-.headline__medium>span {
+.headline__medium > span {
     font-weight: 600;
+}
+
+.headline__medium--boldff > span {
+    font-family: 'Roboto Bold' !important;
 }
 
 .headline object:first-child svg {
@@ -819,7 +844,6 @@ section {
     margin-bottom: 20px;
     margin-top: 20px;
     font-size: 1.225rem;
-    padding: 0 25px;
     -webkit-line-clamp: 2; /* Число отображаемых строк */
     display: -webkit-box; /* Включаем флексбоксы */
     -webkit-box-orient: vertical; /* Вертикальная ориентация */
@@ -831,7 +855,6 @@ section {
     margin-top: auto;
     align-items: center;
     justify-content: space-between;
-    padding: 0 25px;
 }
 
 .card-article__info>div {
@@ -1148,6 +1171,10 @@ section {
     height: 410px;
 }
 
+.all-news-sliders__content-cards .card-article h3 , .all-news-sliders__content-cards .card-article .card-article__info {
+    padding: 0 25px;
+}
+
 .all-news-sliders__content > div:nth-child(2) .card-article {
     background-color: var(--color-accent);
     color: var(--color-white);
@@ -1157,6 +1184,11 @@ section {
     border-color: var(--color-dark-gray);
     max-width: 100%;
     min-height: 560px;
+
+}
+
+.local-news-channel__content .card-article h3, .local-news-channel__content .card-article .card-article__info {
+    padding: 0 25px;
 }
 
 .local-news-channel__headline {

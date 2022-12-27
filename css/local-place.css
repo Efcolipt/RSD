@@ -17,7 +17,8 @@
     border-radius: 8px;
     height: 45px;
     cursor: pointer;
-    transition: color .3 ease, background-color .3s ease;
+    transition: all .3s ease;
+    font-weight: bold;
 }
 
 .local-place__filters-hash button:hover {

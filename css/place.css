@@ -10,11 +10,16 @@
 }
 
 .place__main > div h3 {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
+.place__main > div > p {
+    font-size: 1.6rem;
+    font-family: 'Roboto Bold';
+    font-weight: bold;
+}
 
 .place__main > div > div {
     display: flex;
@@ -66,14 +71,34 @@
 
 .place__info > div > div h3 {
     margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.place__info > div > div p {
+    font-size: 1.3rem;
+    font-family: 'Roboto Bold';
+    line-height: 26px;
 }
 
 .place__info div > div:first-child {
     margin-top: 0;
 }
 
+.place-map h2 {
+    margin-bottom: 12px;
+}
+
+.place-map h2 span {
+    font-weight: 400;
+}
+
+.place-map p {
+    font-size: 1.4rem;
+    font-family: 'Roboto Bold';
+}
+
 .place-map__content {
-    margin-top: 45px;
+    margin-top: 49px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,5 +107,6 @@
 
 #map {
     width: 100%;
+    max-width: 1174px;
     height: 450px;
 }
