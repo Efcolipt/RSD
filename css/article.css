@@ -161,7 +161,7 @@ display: flex;
 }
 
 .article__other-articles .card-article img {
-    height: 170px;
+    height: 200px;
     border-radius: 8px;
 }
 
@@ -188,6 +188,12 @@ display: flex;
 
 .article-news__list .card-article {
     padding: 0;
+    max-width: 100%;
+}
+
+.article-news__list .card-article .image {
+    border-radius: 10px;
+    height: 300px;
 }
 
 .article-news button{

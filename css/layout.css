@@ -67,7 +67,7 @@
 
 .important-info__list {
     display: flex;
-    gap: 10px;
+    gap: 25px;
 }
 
 .important-info__item {
@@ -116,6 +116,12 @@
     position: relative;
 }
 
+.useful-info .slider__item {
+    padding: 0 12.5px;
+}
+
+
+
 /* .useful-info__item::after {
     content: "";
     width: 100%;
@@ -140,11 +146,8 @@
     padding: 0 25px;
 }
 
-.useful-info__item > div > h3 { 
-    flex: 0 0 320px;
-}
-
 .useful-info__item > div h3 {
+    text-align: center;
     font-size: 1.75rem;
     color: var(--color-white);
     font-weight: bold;
@@ -163,13 +166,13 @@
 
 .useful-sites__link{
     font-size: 1.4rem;
-    font-weight: 700; 
     background-color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 15px; 
-    padding: 30px;
+    font-family: 'Roboto Bold';
+    height: 112px;
     border-radius: var(--radius);
     transition: color .3s ease, background-color .3s ease;
 }
@@ -185,6 +188,7 @@
 .useful-sites__link:hover {
     color: var(--color-white);
     background-color: var(--color-accent);
+    border-color: var(--color-accent);
 }
 
 .useful-sites__link:hover svg {
@@ -198,13 +202,17 @@
     margin-top: 45px;
 }
 
+.goverment-docs .slider__item {
+    padding: 0 25px;
+}
+
 .goverment-docs__item {
     width: 100%;
     display: flex;
     border: 1px solid var(--color-line);
     padding: 35px 25px;
     border-radius: var(--radius);
-    min-height: 455px;
+    min-height: 365px;
     flex-direction: column;
     justify-content: center;
 }
@@ -249,7 +257,7 @@
 .reference-book__content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+    grid-gap: 25px;
 }
 
 .reference-book__social h3, .reference-book__local h3{
@@ -282,10 +290,6 @@
     border-radius: var(--radius);
 }
 
-.reference-book__local {
-
-}
-
 .reference-book__social-links a:hover {
     color: var(--color-white);
 }
@@ -308,7 +312,7 @@
 .reference-book__local-links{
     display: grid;
     grid-template-columns: repeat(3, minmax(max-content, auto));;
-    gap: 20px 35px;
+    gap: 20px;
 }
 
 .reference-book__services a {
@@ -321,7 +325,7 @@
     padding: 0 35px;
     margin-bottom: 35px;
     font-size: 1.1rem;
-    transition: color .3s ease, background-color .3s ease;
+    transition: border .3s ease, color .3s ease, background-color .3s ease;
     font-weight: bold;
 }
 
@@ -332,6 +336,7 @@
 .reference-book__services a:hover {
     color: var(--color-white);
     background-color: var(--color-accent);
+    border: 1px solid var(--color-accent);
 }
 
 .reference-book__services a:hover svg {

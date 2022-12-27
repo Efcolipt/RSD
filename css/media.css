@@ -275,10 +275,6 @@
 
 @media only screen and (max-width: 760px){
 
-    .useful-info__item > div > h3 {
-        flex: unset;
-    }
-
     .contacts-helper__list {
         flex-direction: column;
     }
