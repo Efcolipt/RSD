@@ -35,6 +35,18 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+    .header-main__actions-btns ul li:last-child {
+        margin-left: 0;
+    }
+
+    .header-main__actions-brand {
+        display: none!important;
+    }
+
+    .header-main__actions .header-main__content {
+        justify-content: flex-end!important;
+    }
 }
 
 @media only screen and (max-width: 1015px) {
@@ -56,9 +68,13 @@
     .reference-book__services a {
         margin-bottom: 10px;
     }
+
 }
 
 @media only screen and (max-width: 970px) {
+    .header-main__mobile-menu-search {
+        display: flex;
+    }
     .gos-docs__content {
         flex-direction: column;
         gap: 55px;
@@ -103,38 +119,31 @@
     }
 
     .header-main__nav-fast {
-        background: var(--color-accent);
         padding: 10px;
-        border: none;
-        overflow: hidden;
+        border-top: 1px solid var(--color-line);
+        border-bottom: 1px solid var(--color-line);
     }
 
     .header-main__nav-fast .header-main__content {
         padding: 0;
         border: none;
+        overflow-y: scroll;
     }
 
-    .header-main__nav-fast__nav {
-        overflow-x: auto;
-    }
-
-    .header-main__nav-fast__nav::-webkit-scrollbar {
+    .header-main__nav-fast .header-main__content::-webkit-scrollbar {
         display: none;
     } 
 
-    .header-main__nav-fast__nav-link {
-        color: var(--color-white)
+    .header-main__nav-fast__nav {
+        gap: 45px
     }
 
-    .header-main__nav-fast__nav-link svg {
-        fill: var(--color-white);
-    }
-    
+
     .header-main__nav-fast__nav-item:not(:last-child)::after {
         content: "";
         height: 20px;
         width: 1px;
-        background-color: #fff;
+        background-color: var(--color-accent);
         position: absolute;
         right: -20px;
     }
@@ -721,6 +730,10 @@
         gap: 10px;
     }
 
+    #callback-modal .modal__content {
+        flex-direction: column;
+    }
+
     .reference-book__local-links {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -812,13 +825,17 @@
         padding: 0;
     }
 
-    .header-main__actions-btns span {
-        display: none;
-    }
-
     .about-directors__item figure img:first-child {
         width: 100px;
         height: 125px;
+    }
+
+    .header-main__actions-btns ul li {
+        padding: 8px;
+    }
+
+    .header-main__actions-btns ul li a {
+        justify-content: center;
     }
     
     .about-directors__item:nth-child(2n):after {

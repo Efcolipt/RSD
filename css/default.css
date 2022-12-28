@@ -440,16 +440,47 @@ section {
     align-items: center;
 }
 
+.header-main__mobile-menu-search {
+    display: none;
+    gap: 15px;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.header-main__mobile-menu-search input  {
+    height: 40px;
+}
 
 .header-main__mobile-menu__item {
     padding: 25px 45px;
     border-bottom: 1px solid var(--color-line);
     font-size: 1.4rem;
     cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.header-main__mobile-menu__item svg path {
+    stroke: #fff!important;
+}
+
+.header-main__mobile-menu__item:has(> svg)::after {
+    content: '';
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    background: var(--color-accent);
+    right: 31px;
+    border-radius: 3px;
+    top: 14px;
 }
 
 .header-main__mobile-menu__item svg {
-    margin-left: 10px;
+    position: relative;
+    margin-left: auto;
+    z-index: 10;
 }
 
 

@@ -11,6 +11,11 @@ display: flex;
 
 .article__main .image, .article__main video {
     height: 540px;
+    border-radius: 10px;
+}
+
+.article__main .slick-slider {
+    margin-right: 12.5px;
 }
 
 .article__main .slider__indicators {
