@@ -137,13 +137,14 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    gap: 15px;
-    bottom: 20px;
+    z-index: 10;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 25px;
+    gap: 20px;
     width: 100%;
-    z-index: 10;
-    padding: 0 25px;
+    text-align: center;
+    padding: 0 15px;
 }
 
 .useful-info__item > div h3 {
@@ -151,6 +152,12 @@
     font-size: 1.75rem;
     color: var(--color-white);
     font-weight: bold;
+    word-break: break-all;
+}
+
+.useful-info__item > div svg {
+    flex: 0 0 16px;
+    height: 16px;
 }
 
 .useful-info__item > img {

@@ -89,6 +89,8 @@ $(document).ready(function () {
 
   $("#mobile-burger").click(function () {
     $("#mobile-menu").toggleClass("header-main__mobile-menu--active");
+    $('.header-main__mobile-menu-search').toggleClass('header-main__mobile-menu-search--active')
+    $(this).toggleClass('header__burger--active')
   });
 
   if ($("[data-modal]").length > 0)
