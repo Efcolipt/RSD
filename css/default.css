@@ -816,6 +816,17 @@ section {
     background-color: #AA0539;
 }
 
+.btn-default--accent-to-accent2 {
+    background-color: transparent;
+    color: #AA0539;
+    border-color: #AA0539;
+}
+
+.btn-default--accent-to-accent2:hover {
+    background-color: #AA0539;
+    color: #fff;
+}
+
 .btn-default--white {
     background-color: var(--color-white);
     color: var(--color-default);

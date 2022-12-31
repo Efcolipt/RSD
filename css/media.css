@@ -79,6 +79,7 @@
 
     .gos-docs__content .form__docs {
         max-width: 100%;
+        min-width: 100%;
     }
 
     .important-info__item h3 {
@@ -96,7 +97,7 @@
 
     .content-filter__content-videos {
         grid-template-columns: 1fr;
-        row-gap: 25px;
+        row-gap: 60px;
     }
 
     .about-directors__content {
@@ -609,7 +610,6 @@
         grid-column: 1 / -1;
         grid-row-start: 3;
         border: none;
-        margin-top: 15px;
         padding-left: 0;
     }
 
@@ -624,6 +624,7 @@
 
     .content-filter__content-videos {
         margin-top: 50px;
+        margin-bottom: 60px;
     }
 
     .content-filter__headline {
@@ -826,6 +827,14 @@
 
     .local-place__list {
         grid-template-columns: 1fr;
+    }
+
+    .form__docs .form__group {
+        flex-direction: column;
+    }
+
+    .form__group>* {
+        width: 100%;
     }
 
 }
