@@ -73,8 +73,9 @@
 
 @media only screen and (max-width: 970px) {
     .gos-docs__content {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 55px;
+
     }
 
     .gos-docs__content .form__docs {

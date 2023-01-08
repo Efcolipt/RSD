@@ -489,17 +489,6 @@ section {
     stroke: #fff!important;
 }
 
-.header-main__mobile-menu__item:has(> svg)::after {
-    content: '';
-    width: 45px;
-    height: 35px;
-    position: absolute;
-    background: var(--color-accent);
-    right: 31px;
-    border-radius: 3px;
-    top:14px;
-}
-
 .header__burger--active > div:nth-child(2) {
     transform: rotateY(90deg);
 }
@@ -515,7 +504,13 @@ section {
 .header-main__mobile-menu__item svg {
     position: relative;
     margin-left: auto;
+    background: var(--color-accent);
     z-index: 10;
+    padding: 5px 10px;
+    display: block;
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
 }
 
 
