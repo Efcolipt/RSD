@@ -17,8 +17,10 @@
     line-height: 110%;
 }
 
-.main-slider .slider__item > div  .btn-default {
+.main-slider .slider__item > div .btn-default {
     padding: 0 35px;
+    position: absolute;
+    bottom: -70px;
 }
 
 .main-slider .slider__item > div p {
@@ -108,6 +110,14 @@
 .important-info__item h3 > span {
     font-size: 1.75rem;
     font-weight: bold;
+}
+
+.slider-overflow-show {
+    overflow: hidden;
+}
+
+.slider-overflow-show .slick-list {
+    overflow: unset!important;
 }
 
 .useful-info__item {
